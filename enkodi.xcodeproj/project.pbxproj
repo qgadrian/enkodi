@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
+		3A82899E1D2ACB0000C2C0B6 /* BaseTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82899D1D2ACB0000C2C0B6 /* BaseTvShow.swift */; };
+		3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
 		AB3CA06385C48190D513F007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA0937689B8B0ADF667D5 /* Main.storyboard */; };
 		AB3CA19978DBE361746C75CB /* enkodiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CAC5C9505FC30DFA436BF /* enkodiTests.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3A82899D1D2ACB0000C2C0B6 /* BaseTvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShow.swift; sourceTree = "<group>"; };
+		3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3CA2C89CEA2F71BB79393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */,
 				3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */,
 				3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */,
 			);
@@ -82,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A82899C1D2ACAE700C2C0B6 /* tvshow */ = {
+			isa = PBXGroup;
+			children = (
+				3A82899D1D2ACB0000C2C0B6 /* BaseTvShow.swift */,
+			);
+			name = tvshow;
+			path = model/tvshow;
+			sourceTree = "<group>";
+		};
 		AB3CA514B73F452DB6DF53CD /* enkodiUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +127,7 @@
 		AB3CA88D11824EC569F68C0E = {
 			isa = PBXGroup;
 			children = (
+				3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */,
 				3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */,
 				3A9BF1EC1D29B623009A8EDF /* Starscream.framework */,
 				AB3CA5A63FAB9EF8D26355F6 /* Products */,
@@ -125,6 +140,7 @@
 		AB3CAE5863649FA671B7D85B /* enkodi */ = {
 			isa = PBXGroup;
 			children = (
+				3A82899C1D2ACAE700C2C0B6 /* tvshow */,
 				AB3CAE4C7DE9CC3A8B5780C2 /* Info.plist */,
 				AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */,
 				AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */,
@@ -263,6 +279,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -286,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */,
+				3A82899E1D2ACB0000C2C0B6 /* BaseTvShow.swift in Sources */,
 				AB3CA2479292F2E3CFEB7E3C /* enkodi.xcdatamodeld in Sources */,
 				AB3CA2A9343F6CCBE51E3BDC /* ViewController.swift in Sources */,
 			);

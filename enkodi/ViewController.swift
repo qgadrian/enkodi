@@ -10,7 +10,7 @@
 import UIKit
 import Starscream
 import SwiftyJSON
-
+import ObjectMapper
 
 class ViewController: UIViewController, WebSocketDelegate {
     
@@ -50,7 +50,18 @@ class ViewController: UIViewController, WebSocketDelegate {
     }
     
     func websocketDidReceiveMessage(ws: WebSocket, text: String) {
-        print("Received text: \(text)")
+//        print("Received text: \(text)")
+        
+        if let dataFromString = text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
+            let json = JSON(data: dataFromString)
+            let stuff = json["result"]["tvshows"].arrayObject
+            let tvShows = Mapper<BaseTvShow>().mapArray(json["result"]["tvshows"].arrayObject)
+            print(tvShows![0].name)
+        }
+        
+//        let json = JSON(text)
+//        let tvShows = Mapper<BaseTvShow>().map(json["result"]["tvshows"].arrayObject)
+//        print(tvShows?.name)
     }
     
     func websocketDidReceiveData(ws: WebSocket, data: NSData) {
