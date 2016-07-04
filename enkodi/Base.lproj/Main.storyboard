@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i1g-Il-IUY">
+                                <rect key="frame" x="20" y="275" width="560" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Searching for Kodi devices..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXJ-8h-1kC">
+                                        <rect key="frame" x="171" y="0.0" width="219" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47H-VX-QdF">
+                                        <rect key="frame" x="203" y="20" width="155" height="30"/>
+                                        <state key="normal" title="Or insert one manually"/>
+                                        <connections>
+                                            <action selector="testSocket:" destination="BYZ-38-t0r" eventType="touchDown" id="gCH-bM-m2p"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1g-Il-IUY" secondAttribute="trailing" id="0fs-fU-Vxv"/>
+                            <constraint firstItem="i1g-Il-IUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2FG-NN-GDt"/>
+                            <constraint firstItem="i1g-Il-IUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="87G-40-ZtE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1g-Il-IUY" secondAttribute="trailing" id="96z-bU-TIf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1g-Il-IUY" secondAttribute="trailing" id="JmD-lD-uro"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i1g-Il-IUY" secondAttribute="bottom" id="Q2Y-wh-Wec"/>
+                            <constraint firstItem="i1g-Il-IUY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="XIc-9B-IFg"/>
+                            <constraint firstItem="i1g-Il-IUY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="YiM-5E-Fsf"/>
+                            <constraint firstItem="i1g-Il-IUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fhK-NB-86O"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i1g-Il-IUY" secondAttribute="bottom" constant="12" id="qhh-y4-M40"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0fs-fU-Vxv"/>
+                                <exclude reference="87G-40-ZtE"/>
+                                <exclude reference="JmD-lD-uro"/>
+                                <exclude reference="XIc-9B-IFg"/>
+                                <exclude reference="YiM-5E-Fsf"/>
+                                <exclude reference="fhK-NB-86O"/>
+                                <exclude reference="Q2Y-wh-Wec"/>
+                                <exclude reference="qhh-y4-M40"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hFi-fu-xpI" appends="YES" id="mcQ-SD-BNJ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="testButton" destination="47H-VX-QdF" id="AGt-nb-gyU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hFi-fu-xpI"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="477"/>
+        </scene>
+    </scenes>
+</document>

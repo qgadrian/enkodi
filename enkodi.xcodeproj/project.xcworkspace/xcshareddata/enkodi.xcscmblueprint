@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "908d425b-2930-4730-b91f-2b7b060566cf",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "908d425b-2930-4730-b91f-2b7b060566cf" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "908d425b-2930-4730-b91f-2b7b060566cf" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB337C95-E1F1-41E8-BA95-AE06CC6F54A0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "908d425b-2930-4730-b91f-2b7b060566cf" : "dev\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "enkodi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/enkodi\/enkodi.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/svn.fic.udc.es\/grao4\/med\/15-16\/meta03",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "908d425b-2930-4730-b91f-2b7b060566cf"
+    }
+  ]
+}

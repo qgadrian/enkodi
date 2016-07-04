@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
+		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
+		AB3CA06385C48190D513F007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA0937689B8B0ADF667D5 /* Main.storyboard */; };
+		AB3CA19978DBE361746C75CB /* enkodiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CAC5C9505FC30DFA436BF /* enkodiTests.swift */; };
+		AB3CA2479292F2E3CFEB7E3C /* enkodi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA3565EE81D4C3E0B4F42 /* enkodi.xcdatamodeld */; };
+		AB3CA2A9343F6CCBE51E3BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CAD40FD80EFE7ECC13ECD /* ViewController.swift */; };
+		AB3CA37366A0CC7BDD1C8761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */; };
+		AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */; };
+		AB3CAB00EA6DAEA2E7B80FF6 /* enkodiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA9AAB3AFF5F4BF90C0F9 /* enkodiUITests.swift */; };
+		AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB3CA031334B34EC0186E37E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3CAD0839846DF380B48C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3CA88AE2278FDEB560FA42;
+			remoteInfo = enkodi;
+		};
+		AB3CA5762F49EC183967501B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB3CAD0839846DF380B48C1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB3CA88AE2278FDEB560FA42;
+			remoteInfo = enkodi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB3CA2C89CEA2F71BB79393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB3CA62281AE6048AE6363DF /* enkodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enkodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA642A97379A77F1731F6 /* enkodiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enkodiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB3CA713B36385910EA59529 /* enkodiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enkodiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA8C75A2829532FB8900A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		AB3CA9AAB3AFF5F4BF90C0F9 /* enkodiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enkodiUITests.swift; sourceTree = "<group>"; };
+		AB3CAC5C9505FC30DFA436BF /* enkodiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enkodiTests.swift; sourceTree = "<group>"; };
+		AB3CAD40FD80EFE7ECC13ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB3CAD604ABB251F405C6670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB3CADCF18A6939F4EB8CD26 /* enkodi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = enkodi.xcdatamodel; sourceTree = "<group>"; };
+		AB3CAE4C7DE9CC3A8B5780C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB3CA48C7B85E2D46A02AE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA71B641F8C75769D111E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA7F4FD75DC95827EA935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */,
+				3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB3CA514B73F452DB6DF53CD /* enkodiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA2C89CEA2F71BB79393E /* Info.plist */,
+				AB3CA9AAB3AFF5F4BF90C0F9 /* enkodiUITests.swift */,
+			);
+			path = enkodiUITests;
+			sourceTree = "<group>";
+		};
+		AB3CA5A63FAB9EF8D26355F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA62281AE6048AE6363DF /* enkodi.app */,
+				AB3CA642A97379A77F1731F6 /* enkodiTests.xctest */,
+				AB3CA713B36385910EA59529 /* enkodiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB3CA802DFED6E6B05D30766 /* enkodiTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CA8C75A2829532FB8900A /* Info.plist */,
+				AB3CAC5C9505FC30DFA436BF /* enkodiTests.swift */,
+			);
+			path = enkodiTests;
+			sourceTree = "<group>";
+		};
+		AB3CA88D11824EC569F68C0E = {
+			isa = PBXGroup;
+			children = (
+				3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */,
+				3A9BF1EC1D29B623009A8EDF /* Starscream.framework */,
+				AB3CA5A63FAB9EF8D26355F6 /* Products */,
+				AB3CAE5863649FA671B7D85B /* enkodi */,
+				AB3CA802DFED6E6B05D30766 /* enkodiTests */,
+				AB3CA514B73F452DB6DF53CD /* enkodiUITests */,
+			);
+			sourceTree = "<group>";
+		};
+		AB3CAE5863649FA671B7D85B /* enkodi */ = {
+			isa = PBXGroup;
+			children = (
+				AB3CAE4C7DE9CC3A8B5780C2 /* Info.plist */,
+				AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */,
+				AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */,
+				AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */,
+				AB3CA3565EE81D4C3E0B4F42 /* enkodi.xcdatamodeld */,
+				AB3CA0937689B8B0ADF667D5 /* Main.storyboard */,
+				AB3CAD40FD80EFE7ECC13ECD /* ViewController.swift */,
+			);
+			path = enkodi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB3CA25D274DC5329D519660 /* enkodiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3CA4F5D2EFC5A3D6D2DCA1 /* Build configuration list for PBXNativeTarget "enkodiUITests" */;
+			buildPhases = (
+				AB3CACABFF2944271E697814 /* Sources */,
+				AB3CA48C7B85E2D46A02AE07 /* Frameworks */,
+				AB3CA6AD118BF8685279716A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3CA3AC6BAF99E40A18F2BE /* PBXTargetDependency */,
+			);
+			name = enkodiUITests;
+			productName = enkodiUITests;
+			productReference = AB3CA713B36385910EA59529 /* enkodiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		AB3CA3EFE813E1970AEDEEBF /* enkodiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3CAF6A9F8ED5CEFC39309F /* Build configuration list for PBXNativeTarget "enkodiTests" */;
+			buildPhases = (
+				AB3CAB2902A927DF8F0F8899 /* Sources */,
+				AB3CA71B641F8C75769D111E /* Frameworks */,
+				AB3CA4639E32B7BC1CDE5F47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB3CA68DA0B5C48126B7400B /* PBXTargetDependency */,
+			);
+			name = enkodiTests;
+			productName = enkodiTests;
+			productReference = AB3CA642A97379A77F1731F6 /* enkodiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB3CA88AE2278FDEB560FA42 /* enkodi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB3CA02E0A07BCE0DEACB1C2 /* Build configuration list for PBXNativeTarget "enkodi" */;
+			buildPhases = (
+				AB3CAC1AA3969E71CD9F4D49 /* Sources */,
+				AB3CA7F4FD75DC95827EA935 /* Frameworks */,
+				AB3CA06F2350B188C7C3EEB5 /* Resources */,
+				3A9BF1EE1D29B65B009A8EDF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = enkodi;
+			productName = enkodi;
+			productReference = AB3CA62281AE6048AE6363DF /* enkodi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB3CAD0839846DF380B48C1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "adrian quintas";
+				TargetAttributes = {
+					AB3CA88AE2278FDEB560FA42 = {
+						DevelopmentTeam = LU5LT4UV5K;
+					};
+				};
+			};
+			buildConfigurationList = AB3CAA4586393D92AFF0CD5D /* Build configuration list for PBXProject "enkodi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB3CA88D11824EC569F68C0E;
+			productRefGroup = AB3CA5A63FAB9EF8D26355F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB3CA88AE2278FDEB560FA42 /* enkodi */,
+				AB3CA3EFE813E1970AEDEEBF /* enkodiTests */,
+				AB3CA25D274DC5329D519660 /* enkodiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB3CA06F2350B188C7C3EEB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA37366A0CC7BDD1C8761 /* Assets.xcassets in Resources */,
+				AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard in Resources */,
+				AB3CA06385C48190D513F007 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA4639E32B7BC1CDE5F47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CA6AD118BF8685279716A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A9BF1EE1D29B65B009A8EDF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB3CAB2902A927DF8F0F8899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CA19978DBE361746C75CB /* enkodiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CAC1AA3969E71CD9F4D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */,
+				AB3CA2479292F2E3CFEB7E3C /* enkodi.xcdatamodeld in Sources */,
+				AB3CA2A9343F6CCBE51E3BDC /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3CACABFF2944271E697814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB3CAB00EA6DAEA2E7B80FF6 /* enkodiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB3CA3AC6BAF99E40A18F2BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3CA88AE2278FDEB560FA42 /* enkodi */;
+			targetProxy = AB3CA031334B34EC0186E37E /* PBXContainerItemProxy */;
+		};
+		AB3CA68DA0B5C48126B7400B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB3CA88AE2278FDEB560FA42 /* enkodi */;
+			targetProxy = AB3CA5762F49EC183967501B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB3CA0937689B8B0ADF667D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3CAD604ABB251F405C6670 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB3CA10B7934364F59A21751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB3CA89E8E8AAF0BA0C0D80F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB3CA8CBE2AC23E97D4A31AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				INFOPLIST_FILE = enkodiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AB3CAB149259DEAFF65A2B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				INFOPLIST_FILE = enkodiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		AB3CAB26BE1B1F61C98D1357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = enkodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		AB3CAB5FF530B99640A32BB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				INFOPLIST_FILE = enkodiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AB3CAD7C1DAF0EFC89E4FCED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = enkodi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		AB3CAF6D49AAD50EA867626D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				INFOPLIST_FILE = enkodiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+		AB3CAF730054196A65F039E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletvos*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB3CA02E0A07BCE0DEACB1C2 /* Build configuration list for PBXNativeTarget "enkodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CAD7C1DAF0EFC89E4FCED /* Debug */,
+				AB3CAB26BE1B1F61C98D1357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3CA4F5D2EFC5A3D6D2DCA1 /* Build configuration list for PBXNativeTarget "enkodiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CAB5FF530B99640A32BB4 /* Debug */,
+				AB3CAF6D49AAD50EA867626D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3CAA4586393D92AFF0CD5D /* Build configuration list for PBXProject "enkodi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CAF730054196A65F039E6 /* Debug */,
+				AB3CA89E8E8AAF0BA0C0D80F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB3CAF6A9F8ED5CEFC39309F /* Build configuration list for PBXNativeTarget "enkodiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB3CA8CBE2AC23E97D4A31AC /* Debug */,
+				AB3CAB149259DEAFF65A2B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB3CA3565EE81D4C3E0B4F42 /* enkodi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB3CADCF18A6939F4EB8CD26 /* enkodi.xcdatamodel */,
+			);
+			currentVersion = AB3CADCF18A6939F4EB8CD26 /* enkodi.xcdatamodel */;
+			path = enkodi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB3CAD0839846DF380B48C1B /* Project object */;
+}
