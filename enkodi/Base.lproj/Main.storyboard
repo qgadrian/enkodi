@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,6 +32,7 @@
                                         <state key="normal" title="Or insert one manually"/>
                                         <connections>
                                             <action selector="testSocket:" destination="BYZ-38-t0r" eventType="touchDown" id="gCH-bM-m2p"/>
+                                            <segue destination="CvA-hh-s1j" kind="show" id="54b-Vy-mfH"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -74,7 +75,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="hFi-fu-xpI"/>
             </objects>
-            <point key="canvasLocation" x="661" y="477"/>
+            <point key="canvasLocation" x="-556" y="521"/>
+        </scene>
+        <!--Player Controller View Controller-->
+        <scene sceneID="aRp-SN-0cp">
+            <objects>
+                <viewController id="CvA-hh-s1j" customClass="PlayerControllerViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R8m-J1-Pan"/>
+                        <viewControllerLayoutGuide type="bottom" id="fyd-Ty-xmm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lhe-yJ-bcq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-K2-za0">
+                                <rect key="frame" x="150" y="91" width="300" height="134"/>
+                                <state key="normal" title="Up"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlS-mp-Y7B">
+                                <rect key="frame" x="150" y="375" width="300" height="134"/>
+                                <state key="normal" title="Down"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOD-Zy-D0o">
+                                <rect key="frame" x="20" y="233" width="182" height="134"/>
+                                <state key="normal" title="Left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9A-Fz-8kl">
+                                <rect key="frame" x="390" y="221" width="182" height="134"/>
+                                <state key="normal" title="Right"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-5w-iNu">
+                                <rect key="frame" x="210" y="233" width="172" height="134"/>
+                                <state key="normal" title="Ok"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-Lx-VnH">
+                                <rect key="frame" x="18" y="20" width="284" height="31"/>
+                                <connections>
+                                    <action selector="volumeSliderOnSlide:" destination="CvA-hh-s1j" eventType="valueChanged" id="lP7-zo-fq9"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-xD-40S">
+                                <rect key="frame" x="20" y="58" width="205" height="63"/>
+                                <state key="normal" title="Play/Pause"/>
+                                <connections>
+                                    <action selector="playPauseButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="G9N-Wc-zCp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="playPauseButton" destination="Rtv-xD-40S" id="5v9-XF-E8t"/>
+                        <outlet property="volumeSlider" destination="Mci-Lx-VnH" id="080-3n-lbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sa2-rb-gmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="520"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A096C2D1D2C03F2005B8F3C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A096C2C1D2C03F2005B8F3C /* BaseViewController.swift */; };
+		3A096C2F1D2C04C2005B8F3C /* PlayerControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A096C2E1D2C04C2005B8F3C /* PlayerControllerViewController.swift */; };
+		3A096C331D2C119C005B8F3C /* WebSocketHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A096C321D2C119C005B8F3C /* WebSocketHelper.swift */; };
+		3A096C361D2C122C005B8F3C /* RequestFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A096C351D2C122C005B8F3C /* RequestFacade.swift */; };
 		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
 		3A82899E1D2ACB0000C2C0B6 /* BaseTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A82899D1D2ACB0000C2C0B6 /* BaseTvShow.swift */; };
 		3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A096C2C1D2C03F2005B8F3C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3A096C2E1D2C04C2005B8F3C /* PlayerControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerControllerViewController.swift; sourceTree = "<group>"; };
+		3A096C321D2C119C005B8F3C /* WebSocketHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketHelper.swift; sourceTree = "<group>"; };
+		3A096C351D2C122C005B8F3C /* RequestFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFacade.swift; sourceTree = "<group>"; };
 		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		3A82899D1D2ACB0000C2C0B6 /* BaseTvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShow.swift; sourceTree = "<group>"; };
 		3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
@@ -87,6 +95,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A096C2A1D2C026C005B8F3C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3A096C2B1D2C0287005B8F3C /* playercontroller */,
+				3A096C2C1D2C03F2005B8F3C /* BaseViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3A096C2B1D2C0287005B8F3C /* playercontroller */ = {
+			isa = PBXGroup;
+			children = (
+				3A096C2E1D2C04C2005B8F3C /* PlayerControllerViewController.swift */,
+			);
+			path = playercontroller;
+			sourceTree = "<group>";
+		};
+		3A096C301D2C0B06005B8F3C /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				3A096C341D2C1217005B8F3C /* request */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		3A096C311D2C0B15005B8F3C /* websocket */ = {
+			isa = PBXGroup;
+			children = (
+				3A096C321D2C119C005B8F3C /* WebSocketHelper.swift */,
+			);
+			name = websocket;
+			path = ../websocket;
+			sourceTree = "<group>";
+		};
+		3A096C341D2C1217005B8F3C /* request */ = {
+			isa = PBXGroup;
+			children = (
+				3A096C311D2C0B15005B8F3C /* websocket */,
+				3A096C351D2C122C005B8F3C /* RequestFacade.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
 		3A82899C1D2ACAE700C2C0B6 /* tvshow */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +191,8 @@
 		AB3CAE5863649FA671B7D85B /* enkodi */ = {
 			isa = PBXGroup;
 			children = (
+				3A096C301D2C0B06005B8F3C /* helper */,
+				3A096C2A1D2C026C005B8F3C /* view */,
 				3A82899C1D2ACAE700C2C0B6 /* tvshow */,
 				AB3CAE4C7DE9CC3A8B5780C2 /* Info.plist */,
 				AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */,
@@ -302,6 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A096C2D1D2C03F2005B8F3C /* BaseViewController.swift in Sources */,
+				3A096C331D2C119C005B8F3C /* WebSocketHelper.swift in Sources */,
+				3A096C2F1D2C04C2005B8F3C /* PlayerControllerViewController.swift in Sources */,
+				3A096C361D2C122C005B8F3C /* RequestFacade.swift in Sources */,
 				AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */,
 				3A82899E1D2ACB0000C2C0B6 /* BaseTvShow.swift in Sources */,
 				AB3CA2479292F2E3CFEB7E3C /* enkodi.xcdatamodeld in Sources */,
