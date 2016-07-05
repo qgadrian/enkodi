@@ -10,23 +10,44 @@ import Foundation
 import Starscream
 import SwiftyJSON
 
-protocol RequestFacade {
+class RequestFacade {
     
-    func sendRequest(json: JSON)
+    var requestProvider: Requesting!
+    
+    required init?(requestClass: RequestClass, socket: WebSocket) {
+        switch requestClass {
+        case RequestClass.WEB_SOCKET:
+            requestProvider = WebSocketHelper(socket: socket)
+        case RequestClass.REST:
+            // TODO: not implemented yet
+            requestProvider = WebSocketHelper(socket: socket)
+        }
+    }
+    
+    func sendRequest(json: JSON) {
+        requestProvider.sendRequest(json)
+    }
     
     // Basic actions
-    func sendInputAction(inputAction: InputAction)
+    func sendInputAction(inputAction: InputAction) {
+        let json = JsonRequestHelper.getInputActionJson(inputAction)
+        requestProvider.sendRequest(json)
+    }
     
     // Player actions
-    func sendPlayPause()
+    func sendPlayPause() {
+        let json = JsonRequestHelper.getPlayPauseJson()
+        requestProvider.sendRequest(json)
+    }
     
-    func sendStop()
-
-    func sendSetVolume(volume: Int)
-
-}
-
-enum InputAction {
-    case UP, DOWN, RIGHT, LEFT
-    case OK, BACK
+    func sendStop() {
+        let json = JsonRequestHelper.getStopJson()
+        requestProvider.sendRequest(json)
+    }
+    
+    func sendSetVolume(volume: Int) {
+        let json = JsonRequestHelper.getSetVolumeJson(volume)
+        sendRequest(json)
+    }
+    
 }

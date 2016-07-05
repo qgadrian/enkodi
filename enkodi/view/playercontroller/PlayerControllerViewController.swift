@@ -24,46 +24,45 @@ class PlayerControllerViewController : BaseViewController {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     
-    var webSocketHelper: RequestFacade!
+    var requestFacade: RequestFacade!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        webSocketHelper = WebSocketHelper(socket: socket)
+        requestFacade = RequestFacade(requestClass: RequestClass.WEB_SOCKET, socket: socket)
     }
     
     // Input actions
     @IBAction func backButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.BACK)
+        requestFacade.sendInputAction(InputAction.BACK)
     }
     @IBAction func upButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.UP)
+        requestFacade.sendInputAction(InputAction.UP)
     }
     @IBAction func downButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.DOWN)
+        requestFacade.sendInputAction(InputAction.DOWN)
     }
     @IBAction func rightButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.RIGHT)
+        requestFacade.sendInputAction(InputAction.RIGHT)
     }
     @IBAction func leftButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.LEFT)
+        requestFacade.sendInputAction(InputAction.LEFT)
     }
     @IBAction func okButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendInputAction(InputAction.OK)
+        requestFacade.sendInputAction(InputAction.OK)
     }
     
     // Player actions
     @IBAction func playPauseButtonOnClick(sender : AnyObject) {        
-        webSocketHelper.sendPlayPause()
+        requestFacade.sendPlayPause()
     }
     
     @IBAction func stopButtonOnClick(sender: AnyObject) {
-        webSocketHelper.sendStop()
+        requestFacade.sendStop()
     }
     
     @IBAction func volumeSliderOnSlide(sender: AnyObject) {
         let volume: Int = Int(volumeSlider.value)
-        print(volume)
-        webSocketHelper.sendSetVolume(volume)
+        requestFacade.sendSetVolume(volume)
     }
     
 }
