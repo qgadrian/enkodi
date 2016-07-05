@@ -89,25 +89,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-K2-za0">
-                                <rect key="frame" x="150" y="91" width="300" height="134"/>
-                                <state key="normal" title="Up"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlS-mp-Y7B">
-                                <rect key="frame" x="150" y="375" width="300" height="134"/>
+                                <rect key="frame" x="10" y="460" width="300" height="100"/>
                                 <state key="normal" title="Down"/>
+                                <connections>
+                                    <action selector="downButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="M5Y-D6-BDZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOD-Zy-D0o">
-                                <rect key="frame" x="20" y="233" width="182" height="134"/>
+                                <rect key="frame" x="10" y="233" width="98" height="219"/>
                                 <state key="normal" title="Left"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9A-Fz-8kl">
-                                <rect key="frame" x="390" y="221" width="182" height="134"/>
-                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="leftButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="KQt-Wj-wTw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-5w-iNu">
-                                <rect key="frame" x="210" y="233" width="172" height="134"/>
+                                <rect key="frame" x="116" y="275" width="88" height="134"/>
                                 <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="okButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="fRh-Js-6ag"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-Lx-VnH">
                                 <rect key="frame" x="18" y="20" width="284" height="31"/>
@@ -116,10 +117,38 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtv-xD-40S">
-                                <rect key="frame" x="20" y="58" width="205" height="63"/>
+                                <rect key="frame" x="10" y="58" width="117" height="63"/>
                                 <state key="normal" title="Play/Pause"/>
                                 <connections>
                                     <action selector="playPauseButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="G9N-Wc-zCp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9A-Fz-8kl">
+                                <rect key="frame" x="212" y="254" width="88" height="176"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="rightButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="DdV-UM-tEm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-r2-Ok9">
+                                <rect key="frame" x="135" y="58" width="87" height="63"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="xUL-5Z-P5Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-et-WHZ">
+                                <rect key="frame" x="230" y="58" width="70" height="63"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="oFw-yt-LU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-K2-za0">
+                                <rect key="frame" x="10" y="129" width="300" height="96"/>
+                                <state key="normal" title="Up"/>
+                                <connections>
+                                    <action selector="upButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="bqD-3Z-fGJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,7 +156,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="backButton" destination="xFI-et-WHZ" id="kIn-XT-EdQ"/>
+                        <outlet property="downButton" destination="XlS-mp-Y7B" id="S4L-8X-pNa"/>
+                        <outlet property="leftButton" destination="IOD-Zy-D0o" id="q88-yU-B4L"/>
+                        <outlet property="okButton" destination="c4h-5w-iNu" id="eyW-Ck-Wwc"/>
                         <outlet property="playPauseButton" destination="Rtv-xD-40S" id="5v9-XF-E8t"/>
+                        <outlet property="rightButton" destination="f9A-Fz-8kl" id="yh8-65-S7K"/>
+                        <outlet property="stopButton" destination="PWf-r2-Ok9" id="YAl-jH-iNG"/>
+                        <outlet property="upButton" destination="jDy-K2-za0" id="dRr-Lw-weh"/>
                         <outlet property="volumeSlider" destination="Mci-Lx-VnH" id="080-3n-lbE"/>
                     </connections>
                 </viewController>

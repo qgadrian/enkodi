@@ -14,7 +14,19 @@ protocol RequestFacade {
     
     func sendRequest(json: JSON)
     
+    // Basic actions
+    func sendInputAction(inputAction: InputAction)
+    
+    // Player actions
     func sendPlayPause()
+    
+    func sendStop()
 
     func sendSetVolume(volume: Int)
+
+}
+
+enum InputAction {
+    case UP, DOWN, RIGHT, LEFT
+    case OK, BACK
 }
