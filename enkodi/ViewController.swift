@@ -70,7 +70,6 @@ class ViewController: UIViewController {
 //    }
 //    
     @IBAction func testSocket(sender : AnyObject) {
-        print("its a trap!!!")
         
 //        var json = JSON(["jsonrpc" : "2.0", "id" : 1])
 //        json["method"].string = "VideoLibrary.GetTVShows"

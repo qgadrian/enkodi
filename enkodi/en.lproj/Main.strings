@@ -1,0 +1,45 @@
+
+/* Class = "UIButton"; normalTitle = "Or insert one manually"; ObjectID = "47H-VX-QdF"; */
+"47H-VX-QdF.normalTitle" = "Or insert one manually";
+
+/* Class = "UITabBarItem"; title = "Player"; ObjectID = "8bU-04-Uwt"; */
+"8bU-04-Uwt.title" = "Player";
+
+/* Class = "UIButton"; normalTitle = "Left"; ObjectID = "IOD-Zy-D0o"; */
+"IOD-Zy-D0o.normalTitle" = "Left";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "PHt-Pm-hzF"; */
+"PHt-Pm-hzF.text" = "Label";
+
+/* Class = "UIViewController"; title = "PlayerViewController"; ObjectID = "Wtm-bN-EgE"; */
+"Wtm-bN-EgE.title" = "PlayerViewController";
+
+/* Class = "UIButton"; normalTitle = "Down"; ObjectID = "XlS-mp-Y7B"; */
+"XlS-mp-Y7B.normalTitle" = "Down";
+
+/* Class = "UIButton"; normalTitle = "Ok"; ObjectID = "c4h-5w-iNu"; */
+"c4h-5w-iNu.normalTitle" = "Ok";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "cKc-x6-XHA"; */
+"cKc-x6-XHA.title" = "Item 2";
+
+/* Class = "UIButton"; normalTitle = "Right"; ObjectID = "f9A-Fz-8kl"; */
+"f9A-Fz-8kl.normalTitle" = "Right";
+
+/* Class = "UITabBarItem"; title = "Remote controller"; ObjectID = "gbp-8h-VDX"; */
+"gbp-8h-VDX.title" = "Remote controller";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "ham-Ip-AE2"; */
+"ham-Ip-AE2.normalTitle" = "Stop";
+
+/* Class = "UIButton"; normalTitle = "Up"; ObjectID = "jDy-K2-za0"; */
+"jDy-K2-za0.normalTitle" = "Up";
+
+/* Class = "UILabel"; text = "Searching for Kodi devices..."; ObjectID = "nXJ-8h-1kC"; */
+"nXJ-8h-1kC.text" = "Searching for Kodi devices...";
+
+/* Class = "UIButton"; normalTitle = "Play/Pause"; ObjectID = "oXg-Ts-yJP"; */
+"oXg-Ts-yJP.normalTitle" = "Play/Pause";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "xFI-et-WHZ"; */
+"xFI-et-WHZ.normalTitle" = "Back";

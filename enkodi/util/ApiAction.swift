@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ApiActions {
+struct ApiAction {
     struct Input {
         static let up = "Input.Up"
         static let down = "Input.Down"
@@ -16,14 +16,35 @@ struct ApiActions {
         static let left = "Input.Left"
         static let select = "Input.Select"
         static let back = "Input.Back"
+        static let home = "Input.Home"
     }
     
     struct Player {
         static let playPause = "Player.PlayPause"
         static let stop = "Player.Stop"
+        static let getProperties = "Player.GetProperties"
     }
     
     struct Application {
         static let setVolume = "Application.SetVolume"
+        static let getProperties = "Application.GetProperties"
+    }
+    
+    struct VideoLibrary {
+        static let getTvShows = "VideoLibrary.GetTVShows"
+    }
+}
+
+//Notifications
+struct ApiNotification {
+    struct Player {
+        static let play = "Player.OnPlay"
+        static let pause = "Player.OnPause"
+        static let stop = "Player.OnStop"
+        static let properties = "Player.OnGetProperties"
+    }
+    
+    struct VideoLibrary {
+        static let tvShows = "VideoLibrary.GetTVShows"
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 import Starscream
 
-class WebSocketHelper : Requesting {
+class WebSocketHelper : Requestable {
     
     var socket: WebSocket
     
@@ -18,9 +18,22 @@ class WebSocketHelper : Requesting {
         self.socket = socket
     }
     
-    internal func sendRequest(json: JSON) {
+    func sendRequest(json: JSON) {
         let nsData = try! json.rawData()
         socket.writeData(nsData)
+    }
+    
+    func sendRequestForCompletion(json: JSON, completion: () -> ()) {
+        let nsData = try! json.rawData()
+        socket.writeData(nsData, completion: completion)
+    }
+    
+    func sendRequestForObject<T: BaseModel>(json: JSON, _: T.Type) -> T? {
+        let nsData = try! json.rawData()
+        socket.writeData(nsData)
+        
+        // TODO: return type converted
+        return nil
     }
     
 }

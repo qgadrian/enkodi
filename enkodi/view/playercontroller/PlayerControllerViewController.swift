@@ -14,8 +14,7 @@ import ObjectMapper
 
 class PlayerControllerViewController : BaseViewController {
     
-    @IBOutlet weak var playPauseButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var upButton: UIButton!
     @IBOutlet weak var volumeSlider: UISlider!
@@ -24,14 +23,27 @@ class PlayerControllerViewController : BaseViewController {
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     
-    var requestFacade: RequestFacade!
+    override func viewDidAppear(animated: Bool) {
+        backgroundThread(background: refreshApplicationProperties)
+    }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        requestFacade = RequestFacade(requestClass: RequestClass.WEB_SOCKET, socket: socket)
+    private func refreshApplicationProperties() {
+        let requestId = arc4random()
+        BaseViewController.completionQueue[requestId] = receivedApplicationProperties
+        requestFacade.sendGetApplicationProperties(requestId)
+    }
+    
+    private func receivedApplicationProperties(json: JSON) {
+        let applicationProperties = Mapper<ApplicationProperties>().map(json["result"].object)
+        
+        let currentVolume = Float((applicationProperties?.volume)!)
+        volumeSlider.setValue(currentVolume, animated: true)
     }
     
     // Input actions
+    @IBAction func homeButtonOnClick(sender: AnyObject) {
+        requestFacade.sendInputAction(InputAction.HOME)
+    }
     @IBAction func backButtonOnClick(sender: AnyObject) {
         requestFacade.sendInputAction(InputAction.BACK)
     }
@@ -49,15 +61,6 @@ class PlayerControllerViewController : BaseViewController {
     }
     @IBAction func okButtonOnClick(sender: AnyObject) {
         requestFacade.sendInputAction(InputAction.OK)
-    }
-    
-    // Player actions
-    @IBAction func playPauseButtonOnClick(sender : AnyObject) {        
-        requestFacade.sendPlayPause()
-    }
-    
-    @IBAction func stopButtonOnClick(sender: AnyObject) {
-        requestFacade.sendStop()
     }
     
     @IBAction func volumeSliderOnSlide(sender: AnyObject) {

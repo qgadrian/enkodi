@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class BaseTvShow: Mappable {
+class BaseTvShow: BaseModel {
 
     var name: String?
     var id: Int?
