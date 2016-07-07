@@ -328,11 +328,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "489610181.428904"
+            timestampString = "489611465.993613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "playPauseButtonOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -440,11 +440,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/BaseViewController.swift"
-            timestampString = "489610381.056374"
+            timestampString = "489611465.993613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "backgroundThread(_:background:completion:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -648,13 +648,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/BaseViewController.swift"
-            timestampString = "489609809.775483"
+            timestampString = "489611465.993613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
             landmarkName = "websocketDidReceiveMessage(_:text:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enkodi/view/BaseViewController.swift"
+            timestampString = "489611465.993613"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "websocketDidReceiveMessage(_:text:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enkodi/helper/request/RequestFacade.swift"
+            timestampString = "489612154.346369"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "checkAndOpenSocketConnection()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "enkodi.RequestFacade.(checkAndOpenSocketConnection in _F0DC18921A5C709BE0747C198B9075B3) () -&gt; ()"
+                  moduleName = "enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/helper/request/RequestFacade.swift"
+                  timestampString = "489612253.125265"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "enkodi.RequestFacade.(checkAndOpenSocketConnection in _F0DC18921A5C709BE0747C198B9075B3) () -&gt; ()"
+                  moduleName = "enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/helper/request/RequestFacade.swift"
+                  timestampString = "489612253.125489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

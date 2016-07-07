@@ -47,41 +47,41 @@ class RequestFacade {
     // Basic actions
     func sendInputAction(inputAction: InputAction) {
         let json = JsonHelper.getInputActionJson(inputAction)
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     // Player actions
     func sendPlayPause() {
         let json = JsonHelper.getPlayPauseJson()
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     func sendStop() {
         let json = JsonHelper.getStopJson()
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     func sendSetVolume(volume: Int) {
         let json = JsonHelper.getSetVolumeJson(volume)
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     func sendGetApplicationProperties(requestId: UInt32) {
         let json = JsonHelper.getGetApplicationPropertiesJson(requestId)
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     // Player info
     func sendGetPlayerProperties(requestId: UInt32) {
         let json = JsonHelper.getGetPlayerProperties(requestId)
-        requestProvider.sendRequest(json)
+        sendRequest(json)
 //        requestProvider.sendRequestForObject(json, PlayerProperties.self)
     }
     
     // Video library
     func sendGetTvShows(requestId: UInt32) {
         let json = JsonHelper.getGetTvShows(requestId)
-        requestProvider.sendRequest(json)
+        sendRequest(json)
     }
     
     //Web socket private methods
@@ -93,8 +93,7 @@ class RequestFacade {
     }
     
     private func checkAndOpenSocketConnection() {
-        if (requestProvider is WebSocketHelper) {
-            let webSocketHelper = requestProvider as! WebSocketHelper
+        if let webSocketHelper = requestProvider as! WebSocketHelper? {
             if (!webSocketHelper.socket.isConnected) {
                 webSocketHelper.socket.connect()
             }

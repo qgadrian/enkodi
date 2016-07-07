@@ -14,6 +14,7 @@ class PlayerProperties: BaseModel {
     var percentage: Float?
     var currentTime: Time?
     var totalTime: Time?
+    var speed: Int?
     
     required init?(_ map: Map) {
         
@@ -23,6 +24,7 @@ class PlayerProperties: BaseModel {
         percentage <- map["percentage"]
         currentTime <- map["time"]
         totalTime <- map["totaltime"]
+        speed <- map["speed"]
     }
     
 }

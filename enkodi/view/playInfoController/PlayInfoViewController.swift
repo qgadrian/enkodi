@@ -20,6 +20,10 @@ class PlayInfoViewController: BaseViewController {
     @IBOutlet weak var currentTimeLabel: UILabel!
     
     override func viewDidAppear(animated: Bool) {
+        startRefreshingPlayProgress()
+    }
+    
+    func startRefreshingPlayProgress() {
         startTimer(intervalDelay: 1, background: refreshPlayerProperties)
     }
     
@@ -32,6 +36,10 @@ class PlayInfoViewController: BaseViewController {
     private func receivedPlayerProperties(json: JSON) {
         let playerProperties = Mapper<PlayerProperties>().map(json["result"].object)
         playerProgressBar.setValue((playerProperties?.percentage)!, animated: true)
+        
+        if(playerProperties?.speed == 0) {
+            stopTimer()
+        }
         
         currentTimeLabel.text = TimeUtil.getTimeString((playerProperties?.currentTime)!)
     }

@@ -52,8 +52,9 @@ class BaseViewController: UIViewController, WebSocketDelegate {
 //                tabBarController?.selectedViewController = secondViewController
                 
                 tabBarController?.selectedIndex = 1
-                let secondViewController = tabBarController?.selectedViewController as! PlayInfoViewController
-                secondViewController.playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
+                let playInfoController = tabBarController?.selectedViewController as! PlayInfoViewController
+                playInfoController.playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
+                playInfoController.startRefreshingPlayProgress()
             case ApiNotification.Player.pause?:
                 tabBarController?.selectedIndex = 1
                 let secondViewController = tabBarController?.selectedViewController as! PlayInfoViewController
@@ -62,10 +63,10 @@ class BaseViewController: UIViewController, WebSocketDelegate {
                 let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PlayerControllerViewController") as! PlayerControllerViewController
                 self.presentViewController(secondViewController, animated: true, completion: nil)
             default:
-                let requestId = json[JsonHelper.requestIdKey].uInt32
-                if (requestId != nil) {
-                    if let completionFunction = BaseViewController.completionQueue[requestId!] {
+                if let requestId = json[JsonHelper.requestIdKey].uInt32 {
+                    if let completionFunction = BaseViewController.completionQueue[requestId] {
                             completionFunction(json: json)
+                            BaseViewController.completionQueue.removeValueForKey(requestId)
                     }
                 }
             }
