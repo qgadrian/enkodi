@@ -18,6 +18,7 @@ class JsonHelper {
     static let propertiesKey = "properties"
     static let resultKey = "result"
     static let requestIdKey = "id"
+    static let dataKey = "data"
     
     static let baseJson = JSON(["jsonrpc" : "2.0", requestIdKey : 1])
     

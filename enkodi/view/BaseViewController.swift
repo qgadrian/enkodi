@@ -12,70 +12,18 @@ import Starscream
 import SwiftyJSON
 import ObjectMapper
 
-class BaseViewController: UIViewController, WebSocketDelegate {
+class BaseViewController: UIViewController {
+    
+    // UI listeners
+    static var volumeListener: VolumeChangedListener? = nil
     
     var requestFacade: RequestFacade!
-//    static var receivedResponseCompletion: ((json: JSON) -> ())?
-//    static var completionQueue = Dictionary<Int, ((json: JSON) -> ())>()
-    static var completionQueue: [UInt32: ((json: JSON) -> ())] = [:]
+    var webSocketListener: WebSocketListener!
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        requestFacade = RequestFacade.getInstance(RequestProtocol(socketListener: self))
-    }
-    
-    // MARK: Websocket Delegate Methods.
-    
-    func websocketDidConnect(ws: WebSocket) {
-        print("websocket is connected")
-    }
-    
-    func websocketDidDisconnect(ws: WebSocket, error: NSError?) {
-        if let e = error {
-            print("websocket is disconnected: \(e.localizedDescription)")
-        } else {
-            print("websocket disconnected")
-        }
-    }
-    
-    func websocketDidReceiveMessage(ws: WebSocket, text: String) {
-        print("Received text: \(text)")
-        
-        if let dataFromString = text.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false) {
-            let json = JSON(data: dataFromString)
-            let notitificationValue = json[JsonHelper.methodKey].string
-            
-            switch notitificationValue {
-            case ApiNotification.Player.play?:
-//                let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PlayInfoViewController") as! PlayInfoViewController
-//                self.presentViewController(secondViewController, animated: true, completion: nil)
-//                tabBarController?.selectedViewController = secondViewController
-                
-                tabBarController?.selectedIndex = 1
-                let playInfoController = tabBarController?.selectedViewController as! PlayInfoViewController
-                playInfoController.playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
-                playInfoController.startRefreshingPlayProgress()
-            case ApiNotification.Player.pause?:
-                tabBarController?.selectedIndex = 1
-                let secondViewController = tabBarController?.selectedViewController as! PlayInfoViewController
-                secondViewController.playPauseButton.setTitle("Play", forState: UIControlState.Normal)
-            case ApiNotification.Player.stop?:
-                let secondViewController = self.storyboard!.instantiateViewControllerWithIdentifier("PlayerControllerViewController") as! PlayerControllerViewController
-                self.presentViewController(secondViewController, animated: true, completion: nil)
-            default:
-                if let requestId = json[JsonHelper.requestIdKey].uInt32 {
-                    if let completionFunction = BaseViewController.completionQueue[requestId] {
-                            completionFunction(json: json)
-                            BaseViewController.completionQueue.removeValueForKey(requestId)
-                    }
-                }
-            }
-        }
-
-    }
-    
-    func websocketDidReceiveData(ws: WebSocket, data: NSData) {
-        print("Received data: \(data.length)")
+        webSocketListener = WebSocketListener(baseViewControllerInstance: self)
+        requestFacade = RequestFacade.getInstance(RequestProtocol(socketListener: webSocketListener))
     }
     
     // Mark: thread methods

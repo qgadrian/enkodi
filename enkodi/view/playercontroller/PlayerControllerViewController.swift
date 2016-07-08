@@ -12,60 +12,41 @@ import Starscream
 import SwiftyJSON
 import ObjectMapper
 
-class PlayerControllerViewController : BaseViewController {
+class PlayerControllerViewController : BaseVolumeViewController {
     
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var upButton: UIButton!
-    @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var downButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
     
     override func viewDidAppear(animated: Bool) {
-        backgroundThread(background: refreshApplicationProperties)
-    }
-    
-    private func refreshApplicationProperties() {
-        let requestId = arc4random()
-        BaseViewController.completionQueue[requestId] = receivedApplicationProperties
-        requestFacade.sendGetApplicationProperties(requestId)
-    }
-    
-    private func receivedApplicationProperties(json: JSON) {
-        let applicationProperties = Mapper<ApplicationProperties>().map(json["result"].object)
-        
-        let currentVolume = Float((applicationProperties?.volume)!)
-        volumeSlider.setValue(currentVolume, animated: true)
+        super.viewDidAppear(animated)
     }
     
     // Input actions
     @IBAction func homeButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.HOME)
+        requestFacade!.sendInputAction(InputAction.HOME)
     }
     @IBAction func backButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.BACK)
+        requestFacade!.sendInputAction(InputAction.BACK)
     }
     @IBAction func upButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.UP)
+        requestFacade!.sendInputAction(InputAction.UP)
     }
     @IBAction func downButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.DOWN)
+        requestFacade!.sendInputAction(InputAction.DOWN)
     }
     @IBAction func rightButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.RIGHT)
+        requestFacade!.sendInputAction(InputAction.RIGHT)
     }
     @IBAction func leftButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.LEFT)
+        requestFacade!.sendInputAction(InputAction.LEFT)
     }
     @IBAction func okButtonOnClick(sender: AnyObject) {
-        requestFacade.sendInputAction(InputAction.OK)
-    }
-    
-    @IBAction func volumeSliderOnSlide(sender: AnyObject) {
-        let volume: Int = Int(volumeSlider.value)
-        requestFacade.sendSetVolume(volume)
+        requestFacade!.sendInputAction(InputAction.OK)
     }
     
 }

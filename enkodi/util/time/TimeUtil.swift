@@ -19,4 +19,8 @@ class TimeUtil {
         return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
     }
     
+    static func getVolumeValueString(volumeValue: Int) -> String {
+        return String(format: "%02d %%", volumeValue)
+    }
+    
 }

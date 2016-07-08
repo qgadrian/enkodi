@@ -12,7 +12,7 @@ import SwiftyJSON
 import ObjectMapper
 import Starscream
 
-class PlayInfoViewController: BaseViewController {
+class PlayInfoViewController: BaseVolumeViewController {
     
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -20,6 +20,7 @@ class PlayInfoViewController: BaseViewController {
     @IBOutlet weak var currentTimeLabel: UILabel!
     
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         startRefreshingPlayProgress()
     }
     
@@ -29,8 +30,8 @@ class PlayInfoViewController: BaseViewController {
     
     private func refreshPlayerProperties() {
         let requestId = arc4random()
-        BaseViewController.completionQueue[requestId] = receivedPlayerProperties
-        requestFacade.sendGetPlayerProperties(requestId)
+        WebSocketHelper.completionQueue[requestId] = receivedPlayerProperties
+        requestFacade!.sendGetPlayerProperties(requestId)
     }
     
     private func receivedPlayerProperties(json: JSON) {
@@ -46,11 +47,11 @@ class PlayInfoViewController: BaseViewController {
     
     // Player actions
     @IBAction func playPauseButtonOnClick(sender : AnyObject) {
-        requestFacade.sendPlayPause()
+        requestFacade!.sendPlayPause()
     }
     
     @IBAction func stopButtonOnClick(sender: AnyObject) {
-        requestFacade.sendStop()
+        requestFacade!.sendStop()
     }
     
 }

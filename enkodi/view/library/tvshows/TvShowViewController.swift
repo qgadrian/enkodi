@@ -13,21 +13,26 @@ import UIKit
 
 class TvShowViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tvShowsTableView: UITableView!
+    
+    // MARK: Properties
     var tvShows = [BaseTvShow]()
     
-    override func viewDidAppear(animated: Bool) {
-        backgroundThread(background: refreshTvShows)
+    override func viewDidLoad() {
+//        backgroundThread(background: refreshTvShows)
+        refreshTvShows()
     }
     
     private func refreshTvShows() {
         let requestId = arc4random()
-        BaseViewController.completionQueue[requestId] = receivedTvShows
-        requestFacade.sendGetPlayerProperties(requestId)
+        WebSocketHelper.completionQueue[requestId] = receivedTvShows
+        requestFacade!.sendGetTvShows(requestId)
     }
     
     private func receivedTvShows(json: JSON) {
         let tvShows = Mapper<BaseTvShow>().mapArray(json[JsonHelper.resultKey]["tvshows"].arrayObject)
         self.tvShows += tvShows!
+        tvShowsTableView.reloadData()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int  {

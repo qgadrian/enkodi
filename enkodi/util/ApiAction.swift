@@ -47,4 +47,8 @@ struct ApiNotification {
     struct VideoLibrary {
         static let tvShows = "VideoLibrary.GetTVShows"
     }
+    
+    struct Application {
+        static let volumeChanged = "Application.OnVolumeChanged"
+    }
 }

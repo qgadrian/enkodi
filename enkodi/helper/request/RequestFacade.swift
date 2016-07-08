@@ -12,28 +12,26 @@ import SwiftyJSON
 
 class RequestFacade {
     
-    static var instance: RequestFacade?
+    private static var instance: RequestFacade!
     
     var requestProvider: Requestable!
-        
-    let socket = WebSocket(url: NSURL(string: "ws://192.168.0.23:9090/jsonrpc")!)
     
     static func getInstance(requestProtocol: RequestProtocol) -> RequestFacade {
-        if ((instance) == nil) {
+        if ((RequestFacade.instance) == nil) {
             instance = RequestFacade(requestProtocol: requestProtocol)
         }
         
-        return instance!
+        return RequestFacade.instance!
     }
     
     private init?(requestProtocol: RequestProtocol) {
         switch requestProtocol.protocolType {
         case RequestProtocolType.WEB_SOCKET:
-            initializeSocket(requestProtocol.socketListener!)
-            requestProvider = WebSocketHelper(socket: socket)
+            requestProvider = WebSocketHelper(webSocketDelegate: requestProtocol.socketListener!)
         case RequestProtocolType.REST:
             // TODO: not implemented yet
-            requestProvider = WebSocketHelper(socket: socket)
+//            requestProvider = WebSocketHelper()
+            fatalError("not implemented yet")
         }
     }
     
@@ -84,18 +82,12 @@ class RequestFacade {
         sendRequest(json)
     }
     
-    //Web socket private methods
-    private func initializeSocket(webSocketListener: WebSocketDelegate) {
-        if (!socket.isConnected) {
-            socket.connect()
-        }
-        socket.delegate = webSocketListener
-    }
+    //MARK: Web socket private methods
     
     private func checkAndOpenSocketConnection() {
-        if let webSocketHelper = requestProvider as! WebSocketHelper? {
-            if (!webSocketHelper.socket.isConnected) {
-                webSocketHelper.socket.connect()
+        if let webSocketProvider = requestProvider as! WebSocketHelper? {
+            if (!webSocketProvider.socket.isConnected) {
+                webSocketProvider.socket.connect()
             }
         }
     }

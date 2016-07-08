@@ -12,10 +12,13 @@ import Starscream
 
 class WebSocketHelper : Requestable {
     
-    var socket: WebSocket
+    static var completionQueue: [UInt32: ((json: JSON) -> ())] = [:]
     
-    required init(socket: WebSocket) {
-        self.socket = socket
+    let socket = WebSocket(url: NSURL(string: "ws://192.168.0.23:9090/jsonrpc")!)
+    
+    required init(webSocketDelegate: WebSocketDelegate) {
+        socket.delegate = webSocketDelegate
+        socket.connect()
     }
     
     func sendRequest(json: JSON) {
