@@ -24,6 +24,10 @@ class PlayInfoViewController: BaseVolumeViewController {
         startRefreshingPlayProgress()
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        stopTimer()
+    }
+    
     func startRefreshingPlayProgress() {
         startTimer(intervalDelay: 1, background: refreshPlayerProperties)
     }

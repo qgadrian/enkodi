@@ -18,6 +18,7 @@
 		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
 		3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
+		3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */; };
 		3AE581C51D2D923900ACE467 /* PlayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C41D2D923900ACE467 /* PlayerProperties.swift */; };
 		3AE581C71D2DA2D600ACE467 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C61D2DA2D600ACE467 /* BaseModel.swift */; };
 		3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C91D2E699600ACE467 /* TimeUtil.swift */; };
@@ -69,6 +70,7 @@
 		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeasonsViewController.swift; sourceTree = "<group>"; };
 		3AE581C41D2D923900ACE467 /* PlayerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProperties.swift; sourceTree = "<group>"; };
 		3AE581C61D2DA2D600ACE467 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		3AE581C91D2E699600ACE467 /* TimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtil.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 			path = playInfoController;
 			sourceTree = "<group>";
 		};
+		3AC4E04C1D304BAB0099A369 /* season */ = {
+			isa = PBXGroup;
+			children = (
+				3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */,
+			);
+			path = season;
+			sourceTree = "<group>";
+		};
 		3AE581C31D2D922A00ACE467 /* player */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,6 +237,7 @@
 		3AE581CC1D2E9B7300ACE467 /* tvshows */ = {
 			isa = PBXGroup;
 			children = (
+				3AC4E04C1D304BAB0099A369 /* season */,
 				3AE581CF1D2E9C4D00ACE467 /* cell */,
 				3AE581CD1D2E9B8300ACE467 /* TvShowViewController.swift */,
 			);
@@ -533,6 +544,7 @@
 				3A096C2F1D2C04C2005B8F3C /* PlayerControllerViewController.swift in Sources */,
 				3AE581DC1D2FEA9B00ACE467 /* BaseVolumeViewController.swift in Sources */,
 				3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */,
+				3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */,
 				3A096C361D2C122C005B8F3C /* Requestable.swift in Sources */,
 				3A2620AB1D2C4B2800019208 /* ApiAction.swift in Sources */,
 				3AF4D44F1D2D519700F24D08 /* BaseTvShow.swift in Sources */,

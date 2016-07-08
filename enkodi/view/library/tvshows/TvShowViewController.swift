@@ -19,8 +19,7 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
     var tvShows = [BaseTvShow]()
     
     override func viewDidLoad() {
-//        backgroundThread(background: refreshTvShows)
-        refreshTvShows()
+        backgroundThread(background: refreshTvShows)
     }
     
     private func refreshTvShows() {
@@ -55,6 +54,13 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-
     
+    // MARK: Segue methods
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let selectedIndex = tvShowsTableView.indexPathForSelectedRow?.row
+        let tvShowSeasonsViewController = segue.destinationViewController as! TvShowSeasonsViewController
+        tvShowSeasonsViewController.tvShow = tvShows[selectedIndex!]
+    }
+
 }

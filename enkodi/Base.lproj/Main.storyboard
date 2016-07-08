@@ -62,7 +62,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XlS-mp-Y7B">
                                 <rect key="frame" x="10" y="417" width="300" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Down"/>
+                                <state key="normal" title="Down">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="downButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="M5Y-D6-BDZ"/>
                                 </connections>
@@ -70,7 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IOD-Zy-D0o">
                                 <rect key="frame" x="10" y="275" width="98" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Left"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="leftButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="KQt-Wj-wTw"/>
                                 </connections>
@@ -78,7 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="c4h-5w-iNu">
                                 <rect key="frame" x="116" y="275" width="88" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ok"/>
+                                <state key="normal" title="Ok">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="okButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="fRh-Js-6ag"/>
                                 </connections>
@@ -94,7 +100,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xFI-et-WHZ">
                                 <rect key="frame" x="230" y="58" width="70" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="backButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="oFw-yt-LU4"/>
                                 </connections>
@@ -102,7 +110,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jDy-K2-za0">
                                 <rect key="frame" x="10" y="129" width="300" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Up"/>
+                                <state key="normal" title="Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="upButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="bqD-3Z-fGJ"/>
                                 </connections>
@@ -110,7 +120,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Sme-Dt-tSk">
                                 <rect key="frame" x="24" y="58" width="70" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="homeButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="YdA-SM-2wF"/>
                                 </connections>
@@ -119,19 +131,21 @@
                                 <rect key="frame" x="268" y="24" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f9A-Fz-8kl">
                                 <rect key="frame" x="212" y="275" width="88" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Right"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="rightButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="DdV-UM-tEm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Remote controller" id="gbp-8h-VDX"/>
@@ -152,10 +166,10 @@
             </objects>
             <point key="canvasLocation" x="483" y="228"/>
         </scene>
-        <!--Item 2-->
+        <!--tvShowViewController-->
         <scene sceneID="BKZ-l2-5FF">
             <objects>
-                <viewController id="HHA-hj-1Rh" customClass="TvShowViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tvShowViewController" id="HHA-hj-1Rh" userLabel="tvShowViewController" customClass="TvShowViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97E-QS-zAv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,11 +179,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tvShowTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="tvShowTableCell" id="b6V-Nk-D8b" customClass="TvShowCell" customModule="enkodi" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tvShowTableCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tvShowTableCell" id="b6V-Nk-D8b" customClass="TvShowCell" customModule="enkodi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6V-Nk-D8b" id="dn9-rZ-gqf">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O4h-Qw-DLn">
@@ -183,6 +197,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="name" destination="O4h-Qw-DLn" id="v9B-7K-49M"/>
+                                            <segue destination="qS8-AJ-g5O" kind="push" id="275-43-NRu"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -194,14 +209,38 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="cKc-x6-XHA"/>
+                    <navigationItem key="navigationItem" id="kAJ-Bn-Ggi"/>
                     <connections>
                         <outlet property="tvShowsTableView" destination="Tf6-mI-JdI" id="MF2-H5-TmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybH-Jc-2F0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="1802"/>
+            <point key="canvasLocation" x="1069" y="1802"/>
+        </scene>
+        <!--tvShowSeasonsViewController-->
+        <scene sceneID="gCd-ab-lo1">
+            <objects>
+                <viewController storyboardIdentifier="tvShowSeasonsViewController" id="qS8-AJ-g5O" userLabel="tvShowSeasonsViewController" customClass="TvShowSeasonsViewController" customModule="enkodi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zwj-9j-WEH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JzI-J7-lwe">
+                                <rect key="frame" x="139" y="207" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tUc-nd-Y5c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hRx-3q-tVW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="1802"/>
         </scene>
         <!--PlayInfoViewController-->
         <scene sceneID="IbJ-cZ-dNs">
@@ -218,7 +257,9 @@
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="playPauseButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oXg-Ts-yJP">
                                 <rect key="frame" x="20" y="118" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Play"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="playPauseButtonOnClick:" destination="Wtm-bN-EgE" eventType="touchUpInside" id="cHV-Uo-b7x"/>
                                 </connections>
@@ -227,13 +268,15 @@
                                 <rect key="frame" x="240" y="59" width="60" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ham-Ip-AE2">
                                 <rect key="frame" x="200" y="118" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="stopButtonOnClick:" destination="Wtm-bN-EgE" eventType="touchUpInside" id="fPA-mE-9sb"/>
                                 </connections>
@@ -250,11 +293,11 @@
                                 <rect key="frame" x="258" y="482" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.25882352941176467" green="0.25882352941176467" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="-1" title="Player" id="8bU-04-Uwt"/>
                     <connections>
@@ -273,7 +316,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="p0x-0t-0vp">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="L2S-pN-u09" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" extendedLayoutIncludesOpaqueBars="YES" id="L2S-pN-u09" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="4lt-RB-27R">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -282,12 +325,31 @@
                     <connections>
                         <segue destination="CvA-hh-s1j" kind="relationship" relationship="viewControllers" id="nYh-fX-G1N"/>
                         <segue destination="Wtm-bN-EgE" kind="relationship" relationship="viewControllers" id="gnf-0L-yAl"/>
-                        <segue destination="HHA-hj-1Rh" kind="relationship" relationship="viewControllers" id="rXC-s8-VUi"/>
+                        <segue destination="pQC-1L-3zq" kind="relationship" relationship="viewControllers" id="rXC-s8-VUi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UZP-1J-U7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3.2000000000000002" y="1397.28"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="iTv-Os-B5C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pQC-1L-3zq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="cKc-x6-XHA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B8s-d9-fVE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HHA-hj-1Rh" kind="relationship" relationship="rootViewController" id="MLH-dJ-hhO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdb-vS-Yo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="1802"/>
         </scene>
     </scenes>
 </document>
