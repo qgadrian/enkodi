@@ -75,10 +75,25 @@ class RequestFacade {
         sendRequest(json)
 //        requestProvider.sendRequestForObject(json, PlayerProperties.self)
     }
+
+    func sendGetCurrentlyPlaying(requestId: UInt32) {
+        let json = JsonHelper.getGetCurrentlyPlaying(requestId)
+        sendRequest(json)
+    }
     
     // Video library
     func sendGetTvShows(requestId: UInt32) {
         let json = JsonHelper.getGetTvShows(requestId)
+        sendRequest(json)
+    }
+    
+    func sendGetTvShowSeasons(tvShowId: Int, requestId: UInt32) {
+        let json = JsonHelper.getGetTvShowSeasons(tvShowId, requestId: requestId)
+        sendRequest(json)
+    }
+    
+    func sendGetAllTvShowSeasonsEpisodes(tvShowId: Int, requestId: UInt32) {
+        let json = JsonHelper.getGetAllTvShowSeasonsEpisodes(tvShowId, requestId: requestId)
         sendRequest(json)
     }
     

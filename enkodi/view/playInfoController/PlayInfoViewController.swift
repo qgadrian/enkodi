@@ -12,12 +12,19 @@ import SwiftyJSON
 import ObjectMapper
 import Starscream
 
-class PlayInfoViewController: BaseVolumeViewController {
+class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var playerProgressBar: UISlider!
     @IBOutlet weak var currentTimeLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var extraLabel: UILabel!
+    
+    override func viewDidLoad() {
+        BaseViewController.playListener = self
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -56,6 +63,20 @@ class PlayInfoViewController: BaseVolumeViewController {
     
     @IBAction func stopButtonOnClick(sender: AnyObject) {
         requestFacade!.sendStop()
+    }
+    
+    // MARK: Play listener
+    func onPlayListener() {
+        let requestId = arc4random()
+        WebSocketHelper.completionQueue[requestId] = receivedPlayingDetails
+        requestFacade!.sendGetCurrentlyPlaying(requestId)
+    }
+    
+    func receivedPlayingDetails(json: JSON) {
+        let playingDetails = Mapper<PlayingDetails>().map(json[JsonHelper.resultKey]["item"].object)
+        titleLabel.text = playingDetails?.title
+        subtitleLabel.text = playingDetails?.subtitle
+        extraLabel.text = playingDetails?.extraInfo
     }
     
 }

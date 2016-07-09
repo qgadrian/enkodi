@@ -16,6 +16,8 @@ class BaseVolumeViewController: BaseViewController, VolumeChangedListener {
     @IBOutlet weak var volumeSlider: UISlider!
     @IBOutlet weak var volumeLabel: UILabel!
     
+    var ignoreVolumeNotifications: Bool = false
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -39,6 +41,7 @@ class BaseVolumeViewController: BaseViewController, VolumeChangedListener {
     @IBAction func volumeSliderOnSlide(sender: AnyObject) {
         let volume: Int = Int(volumeSlider.value)
         requestFacade!.sendSetVolume(volume)
+        updateVolumeLabel(volumeLabel, volume: volume)
     }
     
     // Mark: UI methods
@@ -48,6 +51,15 @@ class BaseVolumeViewController: BaseViewController, VolumeChangedListener {
         updateVolumeLabel(volumeLabel, volume: volume)
     }
     
+    // When a volume slider is touched, disable any volume changed notifications
+    @IBAction func volumeSliderTouchDown() {
+        ignoreVolumeNotifications = true
+    }
+    
+    @IBAction func volumeSliderTouchUp() {
+        ignoreVolumeNotifications = false
+    }
+    
     private func updateVolumeLabel(volumeLabel: UILabel?, volume: Int) {
         if (volumeLabel != nil) {
            volumeLabel?.text = TimeUtil.getVolumeValueString(volume)
@@ -55,7 +67,8 @@ class BaseVolumeViewController: BaseViewController, VolumeChangedListener {
     }
     
     func onVolumeChanged(volume: Int) {
-        refreshVolumeSlideBar(volumeSlider, volumeLabel: volumeLabel, volume: volume)
+        if (!ignoreVolumeNotifications) {
+            refreshVolumeSlideBar(volumeSlider, volumeLabel: volumeLabel, volume: volume)
+        }
     }
-        
 }

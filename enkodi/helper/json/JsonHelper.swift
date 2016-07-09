@@ -105,10 +105,64 @@ class JsonHelper {
         return json
     }
     
+    static func getGetCurrentlyPlaying(requestId: UInt32) -> JSON {
+        var json = baseJson
+        json[requestIdKey].uInt32 = requestId
+        json[methodKey].string = ApiAction.Player.getCurrentlyPlaying
+        json[paramsKey] = [playerIdKey : 1, propertiesKey : [
+            "title",
+            "showtitle",
+            "season",
+            "year",
+            "disc",
+            "displayartist"]]
+        
+        return json
+    }
+    
     static func getGetTvShows(requestId: UInt32) -> JSON {
         var json = baseJson
         json[requestIdKey].uInt32 = requestId
         json[methodKey].string = ApiAction.VideoLibrary.getTvShows
+        
+        return json
+    }
+    
+    static func getGetTvShowSeasons(tvShowId:Int, requestId: UInt32) -> JSON {
+        var json = baseJson
+        json[requestIdKey].uInt32 = requestId
+        json[methodKey].string = ApiAction.VideoLibrary.getTvShowSeasons
+        
+        json[paramsKey] = ["tvshowid" : tvShowId, propertiesKey : [
+            "season",
+            "showtitle",
+            "playcount",
+            "episode",
+            "fanart",
+            "thumbnail",
+            "tvshowid",
+            "watchedepisodes",
+            "art"]]
+
+        
+        return json
+    }
+    
+    static func getGetAllTvShowSeasonsEpisodes(tvShowId:Int, requestId: UInt32) -> JSON {
+        var json = baseJson
+        json[requestIdKey].uInt32 = requestId
+        json[methodKey].string = ApiAction.VideoLibrary.getTvShowSeasonEpisodes
+        
+        json[paramsKey] = ["tvshowid" : tvShowId, propertiesKey : [
+            "title",
+            "plot",
+            "rating",
+            "runtime",
+            "season",
+            "episode",
+            "file",
+            "resume"]]
+        
         
         return json
     }

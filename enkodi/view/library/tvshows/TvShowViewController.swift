@@ -34,6 +34,7 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
         tvShowsTableView.reloadData()
     }
     
+    // MARK: Table view methods
     func numberOfSectionsInTableView(tableView: UITableView) -> Int  {
         return 1
     }
@@ -46,7 +47,7 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
         let cellIdentifier = "tvShowTableCell"
         let tvShow = tvShows[indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowTableCell
         
         cell.name.text = tvShow.name
         
@@ -55,7 +56,7 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    // MARK: Segue methods
+    // MARK: Segue
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         let selectedIndex = tvShowsTableView.indexPathForSelectedRow?.row

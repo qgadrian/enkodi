@@ -75,17 +75,18 @@ class WebSocketListener: WebSocketDelegate {
         //                self.presentViewController(secondViewController, animated: true, completion: nil)
         //                tabBarController?.selectedViewController = secondViewController
         
+        BaseViewController.playListener?.onPlayListener()
+        
         baseViewControllerInstance.tabBarController?.selectedIndex = 1
         let playInfoController = baseViewControllerInstance.tabBarController?.selectedViewController as! PlayInfoViewController
-        playInfoController.playPauseButton.setTitle("Pause", forState: UIControlState.Normal)
+        playInfoController.playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
         playInfoController.startRefreshingPlayProgress()
     }
     
     private func processOnPauseNotification() {
         baseViewControllerInstance.tabBarController?.selectedIndex = 1
-        let secondViewController = baseViewControllerInstance.tabBarController?.selectedViewController as! PlayInfoViewController
-        secondViewController.playPauseButton.setTitle("Play", forState: UIControlState.Normal)
-        
+        let playInfoController = baseViewControllerInstance.tabBarController?.selectedViewController as! PlayInfoViewController
+        playInfoController.playPauseButton.setImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
     }
     
     private func processOnStopNotification() {

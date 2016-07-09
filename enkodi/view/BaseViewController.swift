@@ -16,6 +16,7 @@ class BaseViewController: UIViewController {
     
     // UI listeners
     static var volumeListener: VolumeChangedListener? = nil
+    static var playListener: PlayListener? = nil
     
     var requestFacade: RequestFacade!
     var webSocketListener: WebSocketListener!
@@ -54,8 +55,10 @@ class BaseViewController: UIViewController {
     }
     
     func stopTimer() {
-        dispatch_source_cancel(timer)
-        timer = nil
+        if (timer != nil) {
+            dispatch_source_cancel(timer)
+            timer = nil
+        }
     }
     
 }

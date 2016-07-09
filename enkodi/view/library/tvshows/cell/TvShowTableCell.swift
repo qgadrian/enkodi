@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TvShowCell: UITableViewCell {
+class TvShowTableCell: UITableViewCell {
     
     @IBOutlet var name: UILabel!    
     
