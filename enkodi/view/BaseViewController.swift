@@ -18,6 +18,10 @@ class BaseViewController: UIViewController {
     static var volumeListener: VolumeChangedListener? = nil
     static var playListener: PlayListener? = nil
     
+    
+    // Global var
+    private static var isPlaying: Bool? = false
+    
     var requestFacade: RequestFacade!
     var webSocketListener: WebSocketListener!
     
@@ -59,6 +63,15 @@ class BaseViewController: UIViewController {
             dispatch_source_cancel(timer)
             timer = nil
         }
+    }
+    
+    // MARK: Player status methods
+    static func setPlayingStatus(isPlaying: Bool) {
+        BaseViewController.isPlaying = isPlaying
+    }
+    
+    static func isPlayerPlaying() -> Bool {
+        return BaseViewController.isPlaying!
     }
     
 }

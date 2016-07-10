@@ -10,6 +10,8 @@ import Foundation
 
 protocol PlayListener {
     
-    func onPlayListener()
+    func onStartPlaying(isPlay: Bool)
+    
+    func onStopPlaying()
     
 }

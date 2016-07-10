@@ -40,10 +40,18 @@ class PlayerControllerViewController : BaseVolumeViewController {
         requestFacade!.sendInputAction(InputAction.DOWN)
     }
     @IBAction func rightButtonOnClick(sender: AnyObject) {
-        requestFacade!.sendInputAction(InputAction.RIGHT)
+        if(BaseViewController.isPlayerPlaying()) {
+            requestFacade!.sendExecuteAction(ExecutionAction.FORWARD)
+        } else {
+            requestFacade!.sendInputAction(InputAction.RIGHT)
+        }
     }
     @IBAction func leftButtonOnClick(sender: AnyObject) {
-        requestFacade!.sendInputAction(InputAction.LEFT)
+        if(BaseViewController.isPlayerPlaying()) {
+            requestFacade!.sendExecuteAction(ExecutionAction.BACKWARD)
+        } else {
+            requestFacade!.sendInputAction(InputAction.LEFT)
+        }
     }
     @IBAction func okButtonOnClick(sender: AnyObject) {
         requestFacade!.sendInputAction(InputAction.OK)

@@ -17,6 +17,15 @@ struct ApiAction {
         static let select = "Input.Select"
         static let back = "Input.Back"
         static let home = "Input.Home"
+        static let info = "Input.Info"
+    }
+    
+    struct Execution {
+        // method
+        static let action = "Input.ExecuteAction"
+        //params
+        static let forward = "stepforward"
+        static let backward = "stepback"
     }
     
     struct Player {

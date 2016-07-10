@@ -41,5 +41,9 @@ enum RequestProtocolType {
 // Send actions
 enum InputAction {
     case UP, DOWN, RIGHT, LEFT
-    case OK, BACK, HOME
+    case OK, BACK, HOME, INFO
+}
+
+enum ExecutionAction {
+    case FORWARD, BACKWARD
 }

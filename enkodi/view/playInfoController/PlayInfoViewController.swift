@@ -16,6 +16,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var infoButton: UIButton!
     @IBOutlet weak var playerProgressBar: UISlider!
     @IBOutlet weak var currentTimeLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -28,7 +29,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        startRefreshingPlayProgress()
+        backgroundThread(background: refreshPlayerStatus)
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -36,23 +37,27 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     }
     
     func startRefreshingPlayProgress() {
-        startTimer(intervalDelay: 1, background: refreshPlayerProperties)
+        startTimer(intervalDelay: 1, background: refreshPlayerStatus)
     }
     
-    private func refreshPlayerProperties() {
+    private func refreshPlayerStatus() {
         let requestId = arc4random()
-        WebSocketHelper.completionQueue[requestId] = receivedPlayerProperties
+        WebSocketHelper.completionQueue[requestId] = receivedPlayerStatus
         requestFacade!.sendGetPlayerProperties(requestId)
     }
     
-    private func receivedPlayerProperties(json: JSON) {
+    private func receivedPlayerStatus(json: JSON) {
         let playerProperties = Mapper<PlayerProperties>().map(json["result"].object)
         playerProgressBar.setValue((playerProperties?.percentage)!, animated: true)
         
         if(playerProperties?.speed == 0) {
             stopTimer()
+            onStartPlaying(false)
+        } else if (!BaseViewController.isPlayerPlaying()) {
+            onStartPlaying(true)
         }
         
+        refreshPlayingDetails()
         currentTimeLabel.text = TimeUtil.getTimeString((playerProperties?.currentTime)!)
     }
     
@@ -65,8 +70,24 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         requestFacade!.sendStop()
     }
     
+    @IBAction func infoButtonOnClick(sender: AnyObject) {
+        requestFacade.sendInputAction(InputAction.INFO)
+    }
+    
     // MARK: Play listener
-    func onPlayListener() {
+    func onStartPlaying(playing: Bool) {
+        if (playing) {
+            playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
+            startRefreshingPlayProgress()
+        } else {
+            playPauseButton.setImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+        }
+        
+        tabBarController?.selectedIndex = 1
+        BaseViewController.setPlayingStatus(playing)
+    }
+    
+    private func refreshPlayingDetails() {
         let requestId = arc4random()
         WebSocketHelper.completionQueue[requestId] = receivedPlayingDetails
         requestFacade!.sendGetCurrentlyPlaying(requestId)
@@ -77,6 +98,13 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         titleLabel.text = playingDetails?.title
         subtitleLabel.text = playingDetails?.subtitle
         extraLabel.text = playingDetails?.extraInfo
+    }
+    
+    func onStopPlaying() {
+        stopTimer()
+        titleLabel.text = ""
+        subtitleLabel.text = ""
+        extraLabel.text = ""
     }
     
 }

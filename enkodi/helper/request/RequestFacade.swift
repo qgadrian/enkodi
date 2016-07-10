@@ -48,6 +48,11 @@ class RequestFacade {
         sendRequest(json)
     }
     
+    func sendExecuteAction(executionAction: ExecutionAction) {
+        let json = JsonHelper.getExecuteActionJson(executionAction)
+        sendRequest(json)
+    }
+    
     // Player actions
     func sendPlayPause() {
         let json = JsonHelper.getPlayPauseJson()

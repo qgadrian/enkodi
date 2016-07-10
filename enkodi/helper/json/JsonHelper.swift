@@ -41,9 +41,29 @@ class JsonHelper {
             inputActionString = ApiAction.Input.back
         case InputAction.HOME:
             inputActionString = ApiAction.Input.home
+        case InputAction.INFO:
+            inputActionString = ApiAction.Input.info
         }
         
         json[methodKey].string = inputActionString
+        
+        return json
+    }
+    
+    static func getExecuteActionJson(executionAction: ExecutionAction) -> JSON {
+        var json = baseJson
+        var executionActionString: String?
+        
+        json[methodKey].string = ApiAction.Execution.action
+        
+        switch (executionAction) {
+        case ExecutionAction.FORWARD:
+            executionActionString = ApiAction.Execution.forward
+        case ExecutionAction.BACKWARD:
+            executionActionString = ApiAction.Execution.backward
+        }
+        
+        json[paramsKey] = ["action" : executionActionString!]
         
         return json
     }

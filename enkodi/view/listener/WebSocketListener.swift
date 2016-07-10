@@ -75,23 +75,17 @@ class WebSocketListener: WebSocketDelegate {
         //                self.presentViewController(secondViewController, animated: true, completion: nil)
         //                tabBarController?.selectedViewController = secondViewController
         
-        BaseViewController.playListener?.onPlayListener()
-        
-        baseViewControllerInstance.tabBarController?.selectedIndex = 1
-        let playInfoController = baseViewControllerInstance.tabBarController?.selectedViewController as! PlayInfoViewController
-        playInfoController.playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
-        playInfoController.startRefreshingPlayProgress()
+        BaseViewController.playListener?.onStartPlaying(true)
     }
     
     private func processOnPauseNotification() {
-        baseViewControllerInstance.tabBarController?.selectedIndex = 1
-        let playInfoController = baseViewControllerInstance.tabBarController?.selectedViewController as! PlayInfoViewController
-        playInfoController.playPauseButton.setImage(UIImage(named: "playButton"), forState: UIControlState.Normal)
+        BaseViewController.playListener?.onStartPlaying(false)
     }
     
     private func processOnStopNotification() {
-        let secondViewController = baseViewControllerInstance.storyboard!.instantiateViewControllerWithIdentifier("PlayerControllerViewController") as! PlayerControllerViewController
-        baseViewControllerInstance.presentViewController(secondViewController, animated: true, completion: nil)
+//        let secondViewController = baseViewControllerInstance.storyboard!.instantiateViewControllerWithIdentifier("PlayerControllerViewController") as! PlayerControllerViewController
+//        baseViewControllerInstance.presentViewController(secondViewController, animated: true, completion: nil)
+        BaseViewController.playListener?.onStopPlaying()
     }
     
     private func processOtherNotificationWithId(json: JSON) {
