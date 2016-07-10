@@ -327,8 +327,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-ru-Jfe">
-                                                    <rect key="frame" x="0.0" y="39" width="320" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cb-ru-Jfe">
+                                                    <rect key="frame" x="8" y="39" width="320" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="320" id="yTR-bj-aWj"/>
                                                     </constraints>
@@ -340,7 +340,7 @@
                                             <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="6Cb-ru-Jfe" firstAttribute="centerY" secondItem="VhR-6f-N6V" secondAttribute="centerY" id="eoG-UP-tvB"/>
-                                                <constraint firstItem="6Cb-ru-Jfe" firstAttribute="leading" secondItem="VhR-6f-N6V" secondAttribute="leading" id="ycS-fE-kul"/>
+                                                <constraint firstItem="6Cb-ru-Jfe" firstAttribute="leading" secondItem="VhR-6f-N6V" secondAttribute="leading" constant="8" id="ycS-fE-kul"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>

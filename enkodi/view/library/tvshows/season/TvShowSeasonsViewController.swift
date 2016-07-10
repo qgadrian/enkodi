@@ -88,6 +88,7 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowSeasonTableCell
         cell.tvShowEpisodeLabel.text = tvShowEpisode.title
+        cell.tvShowEpisodeLabel.sizeToFit()
         
         setCellSelectedBackground(cell)
         

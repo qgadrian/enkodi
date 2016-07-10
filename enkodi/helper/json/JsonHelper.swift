@@ -19,6 +19,7 @@ class JsonHelper {
     static let resultKey = "result"
     static let requestIdKey = "id"
     static let dataKey = "data"
+    static let sortKey = "sort"
     
     static let baseJson = JSON(["jsonrpc" : "2.0", requestIdKey : 1])
     
@@ -151,6 +152,7 @@ class JsonHelper {
         var json = baseJson
         json[requestIdKey].uInt32 = requestId
         json[methodKey].string = ApiAction.VideoLibrary.getTvShows
+        json[paramsKey] = [sortKey : [methodKey: "label"]]
         
         return json
     }
