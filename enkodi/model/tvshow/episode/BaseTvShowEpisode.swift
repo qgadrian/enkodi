@@ -19,6 +19,7 @@ class BaseTvShowEpisode: BaseModel {
     var file: String?
     var officialTotalTime: Int?
     var seasonNumber: Int?
+    var playCount: Int?
     
     required init?(_ map: Map) {
         
@@ -32,6 +33,10 @@ class BaseTvShowEpisode: BaseModel {
         file <- map["file"]
         officialTotalTime <- map["runtime"]
         seasonNumber <- map["season"]
+        playCount <- map["playcount"]
     }
     
+    func isWatched() -> Bool {
+        return playCount != nil && playCount > 0
+    }
 }

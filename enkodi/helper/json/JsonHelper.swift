@@ -188,7 +188,8 @@ class JsonHelper {
             "season",
             "episode",
             "file",
-            "resume"]]
+            "resume",
+            "playcount"]]
         
         
         return json

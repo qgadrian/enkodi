@@ -292,7 +292,7 @@
                             <constraint firstItem="Tf6-mI-JdI" firstAttribute="width" secondItem="97E-QS-zAv" secondAttribute="width" id="zPW-j4-ggq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kAJ-Bn-Ggi"/>
+                    <navigationItem key="navigationItem" title="Tv shows" id="kAJ-Bn-Ggi"/>
                     <connections>
                         <outlet property="tvShowsTableView" destination="Tf6-mI-JdI" id="MF2-H5-TmU"/>
                     </connections>

@@ -21,6 +21,7 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
     
     override func viewDidAppear(animated: Bool) {
         print(tvShow?.name)
+        title = tvShow?.name
     }
     
     override func viewDidLoad() {
@@ -89,6 +90,12 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
         cell.tvShowEpisodeLabel.text = tvShowEpisode.title
         
         setCellSelectedBackground(cell)
+        
+        if (tvShowEpisode.isWatched()) {
+            cell.accessoryType = .Checkmark
+        } else {
+            cell.accessoryType = .DisclosureIndicator
+        }
         
         return cell
     }
