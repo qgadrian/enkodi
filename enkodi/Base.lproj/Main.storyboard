@@ -244,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tf6-mI-JdI">
-                                <rect key="frame" x="0.0" y="64" width="600" height="498"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tvShowTableCell" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="tvShowTableCell" id="b6V-Nk-D8b" customClass="TvShowTableCell" customModule="enkodi" customModuleProvider="target">
@@ -283,8 +283,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XIv-ur-n7L" firstAttribute="top" secondItem="Tf6-mI-JdI" secondAttribute="bottom" constant="-11" id="Vav-wJ-LEf"/>
-                            <constraint firstItem="Tf6-mI-JdI" firstAttribute="top" secondItem="NzF-F1-i2Y" secondAttribute="bottom" id="gFH-Rg-vaV"/>
+                            <constraint firstItem="XIv-ur-n7L" firstAttribute="top" secondItem="Tf6-mI-JdI" secondAttribute="bottom" constant="-49" id="Vav-wJ-LEf"/>
+                            <constraint firstItem="Tf6-mI-JdI" firstAttribute="top" secondItem="NzF-F1-i2Y" secondAttribute="bottom" constant="-64" id="gFH-Rg-vaV"/>
                             <constraint firstItem="Tf6-mI-JdI" firstAttribute="leading" secondItem="97E-QS-zAv" secondAttribute="leading" id="uew-IU-Ta9"/>
                             <constraint firstItem="Tf6-mI-JdI" firstAttribute="width" secondItem="97E-QS-zAv" secondAttribute="width" id="zPW-j4-ggq"/>
                         </constraints>
@@ -296,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ybH-Jc-2F0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004.375" y="1903.5211267605632"/>
+            <point key="canvasLocation" x="2004" y="1903"/>
         </scene>
         <!--tvShowSeasonsViewController-->
         <scene sceneID="gCd-ab-lo1">
@@ -311,7 +311,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tvShowEpisodesTableView" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Npv-MH-vDv">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -355,9 +355,9 @@
                         <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Npv-MH-vDv" firstAttribute="width" secondItem="zwj-9j-WEH" secondAttribute="width" id="BBq-zO-YiE"/>
-                            <constraint firstItem="4MN-jD-RVa" firstAttribute="top" secondItem="Npv-MH-vDv" secondAttribute="bottom" id="QMT-Lj-bpr"/>
+                            <constraint firstItem="4MN-jD-RVa" firstAttribute="top" secondItem="Npv-MH-vDv" secondAttribute="bottom" constant="-49" id="QMT-Lj-bpr"/>
                             <constraint firstItem="Npv-MH-vDv" firstAttribute="leading" secondItem="zwj-9j-WEH" secondAttribute="leading" id="dgC-IK-ry0"/>
-                            <constraint firstItem="Npv-MH-vDv" firstAttribute="top" secondItem="iKF-jV-NMk" secondAttribute="bottom" id="xBx-q6-fKa"/>
+                            <constraint firstItem="Npv-MH-vDv" firstAttribute="top" secondItem="iKF-jV-NMk" secondAttribute="bottom" constant="-64" id="xBx-q6-fKa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tUc-nd-Y5c"/>
