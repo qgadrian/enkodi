@@ -125,6 +125,13 @@ class JsonHelper {
         return json
     }
     
+    static func getSendPlayFile(file: String) -> JSON {
+        var json = baseJson
+        json[methodKey].string = ApiAction.Player.playFile
+        json[paramsKey] = ["item" : ["file" :file]]
+        return json
+    }
+    
     static func getGetCurrentlyPlaying(requestId: UInt32) -> JSON {
         var json = baseJson
         json[requestIdKey].uInt32 = requestId
@@ -187,5 +194,40 @@ class JsonHelper {
         return json
     }
 
+    static func getGetTvShowEpisodeInfo(tvShowEpisodeId:Int, requestId: UInt32) -> JSON {
+        var json = baseJson
+        json[requestIdKey].uInt32 = requestId
+        json[methodKey].string = ApiAction.VideoLibrary.getTvShowSeasonEpisodeInfo
+        
+        json[paramsKey] = ["episodeid" : tvShowEpisodeId, propertiesKey : [
+            "title",
+            "plot",
+            "votes",
+            "rating",
+            "writer",
+            "firstaired",
+            "playcount",
+            "runtime",
+            "director",
+            "productioncode",
+            "season",
+            "episode",
+            "originaltitle",
+            "showtitle",
+            "cast",
+            "streamdetails",
+            "lastplayed",
+            "fanart",
+            "thumbnail",
+            "file",
+            "resume",
+            "tvshowid",
+            "dateadded",
+            "uniqueid",
+            "art"]]
+        
+        
+        return json
+    }
     
 }

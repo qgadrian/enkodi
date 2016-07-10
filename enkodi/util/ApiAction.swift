@@ -33,6 +33,7 @@ struct ApiAction {
         static let stop = "Player.Stop"
         static let getProperties = "Player.GetProperties"
         static let getCurrentlyPlaying = "Player.GetItem"
+        static let playFile = "Player.Open"
     }
     
     struct Application {
@@ -44,6 +45,7 @@ struct ApiAction {
         static let getTvShows = "VideoLibrary.GetTVShows"
         static let getTvShowSeasons = "VideoLibrary.GetSeasons"
         static let getTvShowSeasonEpisodes = "VideoLibrary.GetEpisodes"
+        static let getTvShowSeasonEpisodeInfo = "VideoLibrary.GetEpisodeDetails"
     }
 }
 

@@ -11,7 +11,7 @@ import UIKit
 import ObjectMapper
 import SwiftyJSON
 
-class TvShowSeasonsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tvShowEpisodesTableView: UITableView!
     
@@ -87,6 +87,8 @@ class TvShowSeasonsViewController: BaseViewController, UITableViewDelegate, UITa
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowSeasonTableCell
         cell.tvShowEpisodeLabel.text = tvShowEpisode.title
+        
+        setCellSelectedBackground(cell)
         
         return cell
     }

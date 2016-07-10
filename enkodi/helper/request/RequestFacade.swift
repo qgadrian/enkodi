@@ -80,6 +80,11 @@ class RequestFacade {
         sendRequest(json)
 //        requestProvider.sendRequestForObject(json, PlayerProperties.self)
     }
+    
+    func sendPlayFile(file: String) {
+        let json = JsonHelper.getSendPlayFile(file)
+        sendRequest(json)
+    }
 
     func sendGetCurrentlyPlaying(requestId: UInt32) {
         let json = JsonHelper.getGetCurrentlyPlaying(requestId)
@@ -99,6 +104,11 @@ class RequestFacade {
     
     func sendGetAllTvShowSeasonsEpisodes(tvShowId: Int, requestId: UInt32) {
         let json = JsonHelper.getGetAllTvShowSeasonsEpisodes(tvShowId, requestId: requestId)
+        sendRequest(json)
+    }
+    
+    func sendGetTvShowEpisodeInfo(tvShowEpisodeId: Int, requestId: UInt32) {
+        let json = JsonHelper.getGetTvShowEpisodeInfo(tvShowEpisodeId, requestId: requestId)
         sendRequest(json)
     }
     

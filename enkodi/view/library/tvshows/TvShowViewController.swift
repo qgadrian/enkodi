@@ -11,7 +11,7 @@ import SwiftyJSON
 import ObjectMapper
 import UIKit
 
-class TvShowViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
+class TvShowViewController: BaseTableViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tvShowsTableView: UITableView!
     
@@ -49,9 +49,9 @@ class TvShowViewController: BaseViewController, UITableViewDelegate, UITableView
         
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowTableCell
         
-        cell.name.text = tvShow.name
+        setCellSelectedBackground(cell)
         
-        // Configure the cell...
+        cell.name.text = tvShow.name
         
         return cell
     }

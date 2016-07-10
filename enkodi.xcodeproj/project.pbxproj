@@ -22,6 +22,8 @@
 		3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */; };
 		3AB79BA41D316285006527BD /* PlayListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA31D316285006527BD /* PlayListener.swift */; };
 		3AB79BA61D3165F7006527BD /* PlayingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA51D3165F7006527BD /* PlayingDetails.swift */; };
+		3AB79BA91D325489006527BD /* UIAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA81D325489006527BD /* UIAppColor.swift */; };
+		3AB79BAB1D325887006527BD /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BAA1D325887006527BD /* BaseTableViewController.swift */; };
 		3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */; };
 		3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */; };
 		3AC4E0541D30ECD60099A369 /* BaseTvShowEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */; };
@@ -81,6 +83,8 @@
 		3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeInfo.swift; sourceTree = "<group>"; };
 		3AB79BA31D316285006527BD /* PlayListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListener.swift; sourceTree = "<group>"; };
 		3AB79BA51D3165F7006527BD /* PlayingDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingDetails.swift; sourceTree = "<group>"; };
+		3AB79BA81D325489006527BD /* UIAppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppColor.swift; sourceTree = "<group>"; };
+		3AB79BAA1D325887006527BD /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeasonsViewController.swift; sourceTree = "<group>"; };
 		3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeason.swift; sourceTree = "<group>"; };
 		3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShowEpisode.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				3A096C2B1D2C0287005B8F3C /* playercontroller */,
 				3A096C2C1D2C03F2005B8F3C /* BaseViewController.swift */,
 				3AE581DB1D2FEA9B00ACE467 /* BaseVolumeViewController.swift */,
+				3AB79BAA1D325887006527BD /* BaseTableViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 		3A2620A91D2C4B1800019208 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				3AB79BA71D32547C006527BD /* color */,
 				3AE581C81D2E697C00ACE467 /* time */,
 				3A2620AA1D2C4B2800019208 /* ApiAction.swift */,
 			);
@@ -222,6 +228,14 @@
 				3AB79BA31D316285006527BD /* PlayListener.swift */,
 			);
 			path = play;
+			sourceTree = "<group>";
+		};
+		3AB79BA71D32547C006527BD /* color */ = {
+			isa = PBXGroup;
+			children = (
+				3AB79BA81D325489006527BD /* UIAppColor.swift */,
+			);
+			path = color;
 			sourceTree = "<group>";
 		};
 		3AC4E04C1D304BAB0099A369 /* season */ = {
@@ -600,6 +614,8 @@
 				3AE581E01D2FEDC700ACE467 /* VolumeChangeNotification.swift in Sources */,
 				3AE581E21D2FF1D800ACE467 /* WebSocketListener.swift in Sources */,
 				3A2620B01D2C4D8D00019208 /* JsonHelper.swift in Sources */,
+				3AB79BAB1D325887006527BD /* BaseTableViewController.swift in Sources */,
+				3AB79BA91D325489006527BD /* UIAppColor.swift in Sources */,
 				3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */,
 				3AC4E0541D30ECD60099A369 /* BaseTvShowEpisode.swift in Sources */,
 				3A096C2D1D2C03F2005B8F3C /* BaseViewController.swift in Sources */,

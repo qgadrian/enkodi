@@ -37,7 +37,9 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     }
     
     func startRefreshingPlayProgress() {
-        startTimer(intervalDelay: 1, background: refreshPlayerStatus)
+        if (timer == nil) {
+            startTimer(intervalDelay: 1, background: refreshPlayerStatus)
+        }
     }
     
     private func refreshPlayerStatus() {
@@ -53,7 +55,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         if(playerProperties?.speed == 0) {
             stopTimer()
             onStartPlaying(false)
-        } else if (!BaseViewController.isPlayerPlaying()) {
+        } else {
             onStartPlaying(true)
         }
         
@@ -74,7 +76,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         requestFacade.sendInputAction(InputAction.INFO)
     }
     
-    // MARK: Play listener
+    // MARK: Play listeners
     func onStartPlaying(playing: Bool) {
         if (playing) {
             playPauseButton.setImage(UIImage(named: "pauseButton"), forState: UIControlState.Normal)
@@ -85,6 +87,13 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         
         tabBarController?.selectedIndex = 1
         BaseViewController.setPlayingStatus(playing)
+    }
+    
+    func onStopPlaying() {
+        stopTimer()
+        titleLabel.text = ""
+        subtitleLabel.text = ""
+        extraLabel.text = ""
     }
     
     private func refreshPlayingDetails() {
@@ -98,13 +107,6 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         titleLabel.text = playingDetails?.title
         subtitleLabel.text = playingDetails?.subtitle
         extraLabel.text = playingDetails?.extraInfo
-    }
-    
-    func onStopPlaying() {
-        stopTimer()
-        titleLabel.text = ""
-        subtitleLabel.text = ""
-        extraLabel.text = ""
     }
     
 }
