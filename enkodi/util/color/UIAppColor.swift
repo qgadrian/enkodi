@@ -12,6 +12,8 @@ import UIKit
 class UIAppColor {
     
     static let selectedCellBackgroundColor = "#EF5350"
+    static let selectedTabBarBackgroundColor = "#EF5350"
+    static let selectedButtonBackgroundColor = "#EF5350"
     
     static func buildUIColor(hexString: String, alpha:CGFloat? = 1.0) -> UIColor {
         // Convert hex string to an integer

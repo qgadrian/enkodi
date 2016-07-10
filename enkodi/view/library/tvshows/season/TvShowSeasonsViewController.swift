@@ -82,11 +82,11 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "tvShowSeasonTableCell"
+        let cellIdentifier = "tvShowEpisodeTableCell"
         let tvShowSeasonNumber = tvShowSeasons[indexPath.section].seasonNumber!
         let tvShowEpisode = tvShowEpisodesBySeasonId[tvShowSeasonNumber]![indexPath.row]
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowSeasonTableCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TvShowEpisodeTableCell
         cell.tvShowEpisodeLabel.text = tvShowEpisode.title
         cell.tvShowEpisodeLabel.sizeToFit()
         

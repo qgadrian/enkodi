@@ -59,7 +59,6 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
             onStartPlaying(true)
         }
         
-        refreshPlayingDetails()
         currentTimeLabel.text = TimeUtil.getTimeString((playerProperties?.currentTime)!)
     }
     
@@ -87,6 +86,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         
         tabBarController?.selectedIndex = 1
         BaseViewController.setPlayingStatus(playing)
+        refreshPlayingDetails()
     }
     
     func onStopPlaying() {
@@ -94,6 +94,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         titleLabel.text = ""
         subtitleLabel.text = ""
         extraLabel.text = ""
+        currentTimeLabel.text = ""
     }
     
     private func refreshPlayingDetails() {

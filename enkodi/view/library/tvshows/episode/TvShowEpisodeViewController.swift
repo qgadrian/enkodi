@@ -35,7 +35,7 @@ class TvShowEpisodeViewController: BaseViewController {
     private func receivedTvShowInfo(json: JSON) {
         let tvShowEpisodeInfo = Mapper<TvShowEpisodeInfo>().map(json[JsonHelper.resultKey]["episodedetails"].object)
         
-        titleLabel.text = tvShowEpisodeInfo?.tvShowName
+        titleLabel.text = String(format: "Season %d, episode %d", (tvShowEpisodeInfo?.seasonNumber)!, (tvShowEpisodeInfo?.episodeNumber)!)
         plotLabel.text = tvShowEpisodeInfo?.plot
         plotLabel.sizeToFit()
     }

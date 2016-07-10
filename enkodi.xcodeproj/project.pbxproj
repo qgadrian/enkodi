@@ -24,10 +24,11 @@
 		3AB79BA61D3165F7006527BD /* PlayingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA51D3165F7006527BD /* PlayingDetails.swift */; };
 		3AB79BA91D325489006527BD /* UIAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA81D325489006527BD /* UIAppColor.swift */; };
 		3AB79BAB1D325887006527BD /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BAA1D325887006527BD /* BaseTableViewController.swift */; };
+		3AB79BAF1D32BA7D006527BD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BAE1D32BA7D006527BD /* UIButton.swift */; };
 		3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */; };
 		3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */; };
 		3AC4E0541D30ECD60099A369 /* BaseTvShowEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */; };
-		3AC4E0571D30EF5D0099A369 /* TvShowSeasonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0561D30EF5D0099A369 /* TvShowSeasonTableCell.swift */; };
+		3AC4E0571D30EF5D0099A369 /* TvShowEpisodeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0561D30EF5D0099A369 /* TvShowEpisodeTableCell.swift */; };
 		3AE581C51D2D923900ACE467 /* PlayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C41D2D923900ACE467 /* PlayerProperties.swift */; };
 		3AE581C71D2DA2D600ACE467 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C61D2DA2D600ACE467 /* BaseModel.swift */; };
 		3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581C91D2E699600ACE467 /* TimeUtil.swift */; };
@@ -85,10 +86,11 @@
 		3AB79BA51D3165F7006527BD /* PlayingDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingDetails.swift; sourceTree = "<group>"; };
 		3AB79BA81D325489006527BD /* UIAppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppColor.swift; sourceTree = "<group>"; };
 		3AB79BAA1D325887006527BD /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		3AB79BAE1D32BA7D006527BD /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeasonsViewController.swift; sourceTree = "<group>"; };
 		3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeason.swift; sourceTree = "<group>"; };
 		3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShowEpisode.swift; sourceTree = "<group>"; };
-		3AC4E0561D30EF5D0099A369 /* TvShowSeasonTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeasonTableCell.swift; sourceTree = "<group>"; };
+		3AC4E0561D30EF5D0099A369 /* TvShowEpisodeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeTableCell.swift; sourceTree = "<group>"; };
 		3AE581C41D2D923900ACE467 /* PlayerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProperties.swift; sourceTree = "<group>"; };
 		3AE581C61D2DA2D600ACE467 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		3AE581C91D2E699600ACE467 /* TimeUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtil.swift; sourceTree = "<group>"; };
@@ -104,7 +106,7 @@
 		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB3CA2C89CEA2F71BB79393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB3CA62281AE6048AE6363DF /* enkodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = enkodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB3CA62281AE6048AE6363DF /* Enkodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enkodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3CA642A97379A77F1731F6 /* enkodiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enkodiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB3CA713B36385910EA59529 /* enkodiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = enkodiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +150,7 @@
 		3A096C2A1D2C026C005B8F3C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				3AB79BAC1D32BA4A006527BD /* extensions */,
 				3AE581D51D2FE1E100ACE467 /* listener */,
 				3AE581CB1D2E9B6800ACE467 /* library */,
 				3A2620B31D2C5F8500019208 /* playInfoController */,
@@ -238,6 +241,22 @@
 			path = color;
 			sourceTree = "<group>";
 		};
+		3AB79BAC1D32BA4A006527BD /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AB79BAD1D32BA52006527BD /* button */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		3AB79BAD1D32BA52006527BD /* button */ = {
+			isa = PBXGroup;
+			children = (
+				3AB79BAE1D32BA7D006527BD /* UIButton.swift */,
+			);
+			path = button;
+			sourceTree = "<group>";
+		};
 		3AC4E04C1D304BAB0099A369 /* season */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,7 +286,7 @@
 		3AC4E0551D30EF500099A369 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				3AC4E0561D30EF5D0099A369 /* TvShowSeasonTableCell.swift */,
+				3AC4E0561D30EF5D0099A369 /* TvShowEpisodeTableCell.swift */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -408,7 +427,7 @@
 		AB3CA5A63FAB9EF8D26355F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB3CA62281AE6048AE6363DF /* enkodi.app */,
+				AB3CA62281AE6048AE6363DF /* Enkodi.app */,
 				AB3CA642A97379A77F1731F6 /* enkodiTests.xctest */,
 				AB3CA713B36385910EA59529 /* enkodiUITests.xctest */,
 			);
@@ -509,7 +528,7 @@
 			);
 			name = enkodi;
 			productName = enkodi;
-			productReference = AB3CA62281AE6048AE6363DF /* enkodi.app */;
+			productReference = AB3CA62281AE6048AE6363DF /* Enkodi.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -610,7 +629,7 @@
 				3A2620B21D2C518700019208 /* RequestFacade.swift in Sources */,
 				3AE581D81D2FE20300ACE467 /* VolumeChangedListener.swift in Sources */,
 				3AE581C71D2DA2D600ACE467 /* BaseModel.swift in Sources */,
-				3AC4E0571D30EF5D0099A369 /* TvShowSeasonTableCell.swift in Sources */,
+				3AC4E0571D30EF5D0099A369 /* TvShowEpisodeTableCell.swift in Sources */,
 				3AE581E01D2FEDC700ACE467 /* VolumeChangeNotification.swift in Sources */,
 				3AE581E21D2FF1D800ACE467 /* WebSocketListener.swift in Sources */,
 				3A2620B01D2C4D8D00019208 /* JsonHelper.swift in Sources */,
@@ -622,6 +641,7 @@
 				3A096C331D2C119C005B8F3C /* WebSocketHelper.swift in Sources */,
 				3A2620B51D2C5F9700019208 /* PlayInfoViewController.swift in Sources */,
 				3AE581D11D2E9C5600ACE467 /* TvShowTableCell.swift in Sources */,
+				3AB79BAF1D32BA7D006527BD /* UIButton.swift in Sources */,
 				3A096C2F1D2C04C2005B8F3C /* PlayerControllerViewController.swift in Sources */,
 				3AE581DC1D2FEA9B00ACE467 /* BaseVolumeViewController.swift in Sources */,
 				3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */,
@@ -761,7 +781,7 @@
 				INFOPLIST_FILE = enkodi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Enkodi;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -792,7 +812,7 @@
 				INFOPLIST_FILE = enkodi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Enkodi;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
