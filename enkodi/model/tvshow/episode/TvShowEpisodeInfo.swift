@@ -14,6 +14,7 @@ class TvShowEpisodeInfo: BaseTvShowEpisode {
     var tvShowName: String?
     var rating: Double?
     var firstAired: String?
+    var thumbnail: String?
     
     required init?(_ map: Map) {
         super.init(map)
@@ -25,6 +26,7 @@ class TvShowEpisodeInfo: BaseTvShowEpisode {
         tvShowName <- map["showtitle"]
         rating <- map["rating"]
         firstAired <- map["firstaired"]
+        thumbnail <- map["thumbnail"]
     }
     
 }

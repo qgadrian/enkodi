@@ -10,12 +10,15 @@ import Foundation
 import UIKit
 import SwiftyJSON
 import ObjectMapper
+import Alamofire
+import AlamofireImage
 
 class TvShowEpisodeViewController: BaseViewController {
     
     @IBOutlet weak var plotLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var episodeThumbnail: UIImageView!
     
     var baseTvShowEpisode: BaseTvShowEpisode?
     
@@ -34,6 +37,16 @@ class TvShowEpisodeViewController: BaseViewController {
     
     private func receivedTvShowInfo(json: JSON) {
         let tvShowEpisodeInfo = Mapper<TvShowEpisodeInfo>().map(json[JsonHelper.resultKey]["episodedetails"].object)
+        
+        let url = "http://192.168.0.23:7523/image" + UrlUtil.parseImageToUrlPath((tvShowEpisodeInfo?.thumbnail)!)
+        Alamofire.request(.GET, url).authenticate(user: "adrian", password: "***REMOVED***").responseImage {
+            response in debugPrint(response)
+            
+            if let image = response.result.value {
+                print("image downloaded: \(image)")
+                self.episodeThumbnail.image = image
+            }
+        }
         
         titleLabel.text = String(format: "Season %d, episode %d", (tvShowEpisodeInfo?.seasonNumber)!, (tvShowEpisodeInfo?.episodeNumber)!)
         plotLabel.text = tvShowEpisodeInfo?.plot

@@ -16,6 +16,7 @@
 		3A2620B21D2C518700019208 /* RequestFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2620B11D2C518700019208 /* RequestFacade.swift */; };
 		3A2620B51D2C5F9700019208 /* PlayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2620B41D2C5F9700019208 /* PlayInfoViewController.swift */; };
 		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
+		3A59A7921D343E6A005C4280 /* UrlUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A7911D343E6A005C4280 /* UrlUtil.swift */; };
 		3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */; };
 		3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
@@ -25,6 +26,8 @@
 		3AB79BA91D325489006527BD /* UIAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA81D325489006527BD /* UIAppColor.swift */; };
 		3AB79BAB1D325887006527BD /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BAA1D325887006527BD /* BaseTableViewController.swift */; };
 		3AB79BAF1D32BA7D006527BD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BAE1D32BA7D006527BD /* UIButton.swift */; };
+		3AB79BB21D33F2AD006527BD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB79BB01D33F2AD006527BD /* Alamofire.framework */; };
+		3AB79BB31D33F2AD006527BD /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB79BB11D33F2AD006527BD /* AlamofireImage.framework */; };
 		3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */; };
 		3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */; };
 		3AC4E0541D30ECD60099A369 /* BaseTvShowEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */; };
@@ -78,6 +81,7 @@
 		3A2620B11D2C518700019208 /* RequestFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFacade.swift; sourceTree = "<group>"; };
 		3A2620B41D2C5F9700019208 /* PlayInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayInfoViewController.swift; sourceTree = "<group>"; };
 		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3A59A7911D343E6A005C4280 /* UrlUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlUtil.swift; sourceTree = "<group>"; };
 		3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeViewController.swift; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		3AB79BA81D325489006527BD /* UIAppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAppColor.swift; sourceTree = "<group>"; };
 		3AB79BAA1D325887006527BD /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		3AB79BAE1D32BA7D006527BD /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		3AB79BB01D33F2AD006527BD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3AB79BB11D33F2AD006527BD /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		3AC4E04D1D304BB80099A369 /* TvShowSeasonsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeasonsViewController.swift; sourceTree = "<group>"; };
 		3AC4E0501D30EC3F0099A369 /* TvShowSeason.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowSeason.swift; sourceTree = "<group>"; };
 		3AC4E0531D30ECD60099A369 /* BaseTvShowEpisode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShowEpisode.swift; sourceTree = "<group>"; };
@@ -138,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AB79BB21D33F2AD006527BD /* Alamofire.framework in Frameworks */,
+				3AB79BB31D33F2AD006527BD /* AlamofireImage.framework in Frameworks */,
 				3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */,
 				3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */,
 				3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */,
@@ -201,6 +209,7 @@
 		3A2620A91D2C4B1800019208 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				3A59A7901D343E5F005C4280 /* url */,
 				3AB79BA71D32547C006527BD /* color */,
 				3AE581C81D2E697C00ACE467 /* time */,
 				3A2620AA1D2C4B2800019208 /* ApiAction.swift */,
@@ -223,6 +232,14 @@
 				3A2620B41D2C5F9700019208 /* PlayInfoViewController.swift */,
 			);
 			path = playInfoController;
+			sourceTree = "<group>";
+		};
+		3A59A7901D343E5F005C4280 /* url */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A7911D343E6A005C4280 /* UrlUtil.swift */,
+			);
+			path = url;
 			sourceTree = "<group>";
 		};
 		3AB79BA21D31627C006527BD /* play */ = {
@@ -446,6 +463,8 @@
 		AB3CA88D11824EC569F68C0E = {
 			isa = PBXGroup;
 			children = (
+				3AB79BB01D33F2AD006527BD /* Alamofire.framework */,
+				3AB79BB11D33F2AD006527BD /* AlamofireImage.framework */,
 				3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */,
 				3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */,
 				3A9BF1EC1D29B623009A8EDF /* Starscream.framework */,
@@ -602,6 +621,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 			);
@@ -650,6 +671,7 @@
 				3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */,
 				3A096C361D2C122C005B8F3C /* Requestable.swift in Sources */,
 				3A2620AB1D2C4B2800019208 /* ApiAction.swift in Sources */,
+				3A59A7921D343E6A005C4280 /* UrlUtil.swift in Sources */,
 				3AF4D44F1D2D519700F24D08 /* BaseTvShow.swift in Sources */,
 				3AB79BA61D3165F7006527BD /* PlayingDetails.swift in Sources */,
 				AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */,

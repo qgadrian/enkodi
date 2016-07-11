@@ -1080,11 +1080,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/model/tvshow/episode/TvShowEpisodeInfo.swift"
-            timestampString = "489842617.621062"
+            timestampString = "489962580.147756"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "mapping(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1096,11 +1096,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
-            timestampString = "489843589.306066"
+            timestampString = "489962580.147756"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "refreshTvShowInfo()"
             landmarkType = "5">
          </BreakpointContent>
@@ -1112,13 +1112,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
-            timestampString = "489843589.306066"
+            timestampString = "489963514.218"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "receivedTvShowInfo(_:)"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Enkodi.TvShowEpisodeViewController.(receivedTvShowInfo in _029AD3A71E5C3ED17A6D49DAF4189D46) (SwiftyJSON.JSON) -&gt; ()"
+                  moduleName = "Enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+                  timestampString = "489962580.503087"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Enkodi.TvShowEpisodeViewController.(receivedTvShowInfo in _029AD3A71E5C3ED17A6D49DAF4189D46) (SwiftyJSON.JSON) -&gt; ()"
+                  moduleName = "Enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+                  timestampString = "489962580.503244"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "3248">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1357,6 +1389,70 @@
                   startingLineNumber = "105"
                   endingLineNumber = "105"
                   offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+            timestampString = "489963514.218"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "receivedTvShowInfo(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+            timestampString = "489963493.480533"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "receivedTvShowInfo(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Enkodi.TvShowEpisodeViewController.(receivedTvShowInfo in _029AD3A71E5C3ED17A6D49DAF4189D46) (SwiftyJSON.JSON) -&gt; ()"
+                  moduleName = "Enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+                  timestampString = "489963515.323725"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1684">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Enkodi.TvShowEpisodeViewController.((receivedTvShowInfo in _029AD3A71E5C3ED17A6D49DAF4189D46) (SwiftyJSON.JSON) -&gt; ()).(closure #1)"
+                  moduleName = "Enkodi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/library/tvshows/episode/TvShowEpisodeViewController.swift"
+                  timestampString = "489963515.323944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "132">
                </Location>
             </Locations>
          </BreakpointContent>
