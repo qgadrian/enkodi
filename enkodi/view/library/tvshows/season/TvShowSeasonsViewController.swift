@@ -24,6 +24,12 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
         title = tvShow?.name
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        if let selectedIndex = tvShowEpisodesTableView.indexPathForSelectedRow {
+            tvShowEpisodesTableView.deselectRowAtIndexPath(selectedIndex, animated: animated)
+        }
+    }
+    
     override func viewDidLoad() {
         backgroundThread(background: refreshTvShowSeasons)
     }
@@ -94,6 +100,7 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
         
         if (tvShowEpisode.isWatched()) {
             cell.accessoryType = .Checkmark
+            cell.tintColor = UIAppColor.buildUIColor(UIAppColor.cellAccesoryTypeColor)
         } else {
             cell.accessoryType = .DisclosureIndicator
         }

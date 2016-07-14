@@ -13,7 +13,7 @@ import ObjectMapper
 import Alamofire
 import AlamofireImage
 
-class TvShowEpisodeViewController: BaseViewController {
+class TvShowEpisodeViewController: BaseViewController, UIScreenEdgePanGestureRecognizer {
     
     @IBOutlet weak var plotLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

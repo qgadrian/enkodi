@@ -18,6 +18,7 @@
 		3A3A4E3C1D2A6FD500E968AB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */; };
 		3A59A7921D343E6A005C4280 /* UrlUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A7911D343E6A005C4280 /* UrlUtil.swift */; };
 		3A8289A01D2ACC9B00C2C0B6 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */; };
+		3A82EB751D378D4F00B8CF40 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A82EB741D378D4F00B8CF40 /* Launch Screen.storyboard */; };
 		3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
 		3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */; };
@@ -49,7 +50,7 @@
 		AB3CA2479292F2E3CFEB7E3C /* enkodi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA3565EE81D4C3E0B4F42 /* enkodi.xcdatamodeld */; };
 		AB3CA2A9343F6CCBE51E3BDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CAD40FD80EFE7ECC13ECD /* ViewController.swift */; };
 		AB3CA37366A0CC7BDD1C8761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */; };
-		AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */; };
+		AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard.bad in Resources */ = {isa = PBXBuildFile; fileRef = AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard.bad */; };
 		AB3CAB00EA6DAEA2E7B80FF6 /* enkodiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA9AAB3AFF5F4BF90C0F9 /* enkodiUITests.swift */; };
 		AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		3A3A4E3B1D2A6FD500E968AB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		3A59A7911D343E6A005C4280 /* UrlUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlUtil.swift; sourceTree = "<group>"; };
 		3A82899F1D2ACC9B00C2C0B6 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		3A82EB741D378D4F00B8CF40 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeViewController.swift; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeInfo.swift; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 		3AE581DF1D2FEDC700ACE467 /* VolumeChangeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeChangeNotification.swift; sourceTree = "<group>"; };
 		3AE581E11D2FF1D800ACE467 /* WebSocketListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketListener.swift; path = ../WebSocketListener.swift; sourceTree = "<group>"; };
 		3AF4D44E1D2D519700F24D08 /* BaseTvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShow.swift; sourceTree = "<group>"; };
-		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/LaunchScreen.storyboard.bad; sourceTree = "<group>"; };
 		AB3CA2C89CEA2F71BB79393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB3CA62281AE6048AE6363DF /* Enkodi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enkodi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -484,9 +486,10 @@
 				3A096C2A1D2C026C005B8F3C /* view */,
 				AB3CAE4C7DE9CC3A8B5780C2 /* Info.plist */,
 				AB3CA33B13D85F0092EF45C0 /* Assets.xcassets */,
-				AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */,
+				AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard.bad */,
 				AB3CA64D28497D151FAE4DC6 /* AppDelegate.swift */,
 				AB3CA3565EE81D4C3E0B4F42 /* enkodi.xcdatamodeld */,
+				3A82EB741D378D4F00B8CF40 /* Launch Screen.storyboard */,
 				AB3CA0937689B8B0ADF667D5 /* Main.storyboard */,
 				AB3CAD40FD80EFE7ECC13ECD /* ViewController.swift */,
 			);
@@ -590,7 +593,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3CA37366A0CC7BDD1C8761 /* Assets.xcassets in Resources */,
-				AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard in Resources */,
+				AB3CA9CBB6B1E4BB712D66A5 /* LaunchScreen.storyboard.bad in Resources */,
+				3A82EB751D378D4F00B8CF40 /* Launch Screen.storyboard in Resources */,
 				AB3CA06385C48190D513F007 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,12 +719,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard */ = {
+		AB3CAF070AFE710154EE25C2 /* LaunchScreen.storyboard.bad */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AB3CA10B7934364F59A21751 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.storyboard.bad;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -794,6 +798,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -825,6 +830,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

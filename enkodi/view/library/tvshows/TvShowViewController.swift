@@ -22,6 +22,12 @@ class TvShowViewController: BaseTableViewController, UITableViewDelegate, UITabl
         backgroundThread(background: refreshTvShows)
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        if let selectedIndex = tvShowsTableView.indexPathForSelectedRow {
+            tvShowsTableView.deselectRowAtIndexPath(selectedIndex, animated: animated)
+        }
+    }
+    
     private func refreshTvShows() {
         let requestId = arc4random()
         WebSocketHelper.completionQueue[requestId] = receivedTvShows
