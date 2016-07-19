@@ -13,7 +13,7 @@ class BaseTableViewController: BaseViewController {
     
     func setCellSelectedBackground(cell: UITableViewCell) {
         let bgColorView = UIView()
-        bgColorView.backgroundColor = UIAppColor.buildUIColor(UIAppColor.selectedCellBackgroundColor)
+        bgColorView.backgroundColor = ThemeManager.currentTheme().cellHighlightColor
         cell.selectedBackgroundView = bgColorView
     }
     

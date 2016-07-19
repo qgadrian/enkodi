@@ -12,7 +12,7 @@ import SwiftyJSON
 import ObjectMapper
 import Starscream
 
-class PlayInfoViewController: BaseVolumeViewController, PlayListener {
+class PlayInfoViewController: BaseVolumeViewController, PlayListener, UIActionSheetDelegate {
     
     @IBOutlet var playPauseButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
@@ -22,6 +22,10 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var extraLabel: UILabel!
+    @IBOutlet weak var subtitlesButton: UIButton!
+    @IBOutlet weak var audioButton: UIButton!
+    
+    var playerProperties: PlayerProperties?
     
     override func viewDidLoad() {
         BaseViewController.playListener = self
@@ -49,7 +53,7 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
     }
     
     private func receivedPlayerStatus(json: JSON) {
-        let playerProperties = Mapper<PlayerProperties>().map(json["result"].object)
+        playerProperties = Mapper<PlayerProperties>().map(json["result"].object)
         playerProgressBar.setValue((playerProperties?.percentage)!, animated: true)
         
         if(playerProperties?.speed == 0) {
@@ -75,6 +79,51 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         requestFacade.sendInputAction(InputAction.INFO)
     }
     
+    @IBAction func subtitlesButtonOnClick(sender: AnyObject) {
+        let subtitlesActionSheet: UIAlertController = UIAlertController(title: "Select subtitle", message: "", preferredStyle: .ActionSheet)
+        
+        let cancelActionButton: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        subtitlesActionSheet.addAction(cancelActionButton)
+        
+        if let subtitles = playerProperties?.subtitles {
+            for subtitle in subtitles {
+                let subtitleActionButton: UIAlertAction = UIAlertAction(title: subtitle.language! + " - " + subtitle.name!, style: .Default)
+                { action -> Void in
+                    self.requestFacade!.sendSetSubtitle(subtitle.index)
+                }
+                subtitlesActionSheet.addAction(subtitleActionButton)
+            }
+        }
+        
+        
+        let disableSubtitlesActionButton: UIAlertAction = UIAlertAction(title: "Disable subtitles", style: .Default)
+        { action -> Void in
+            self.requestFacade!.sendSetSubtitle(nil)
+        }
+        subtitlesActionSheet.addAction(disableSubtitlesActionButton)
+        
+        self.presentViewController(subtitlesActionSheet, animated: true, completion: nil)
+    }
+    
+    @IBAction func audioStreamButtonOnClick(sender: AnyObject) {
+        let audiosActionSheet: UIAlertController = UIAlertController(title: "Select audio", message: "", preferredStyle: .ActionSheet)
+        
+        let cancelActionButton: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        audiosActionSheet.addAction(cancelActionButton)
+        
+        if let audioStreams = playerProperties?.audioStreams {
+            for audioStream in audioStreams {
+                let audioStreamActionButton: UIAlertAction = UIAlertAction(title: audioStream.language! + " - " + audioStream.name!, style: .Default)
+                { action -> Void in
+                    self.requestFacade!.sendSetAudio(audioStream.index!)
+                }
+                audiosActionSheet.addAction(audioStreamActionButton)
+            }
+        }
+        
+        self.presentViewController(audiosActionSheet, animated: true, completion: nil)
+    }
+    
     // MARK: Play listeners
     func onStartPlaying(playing: Bool) {
         if (playing) {
@@ -95,6 +144,9 @@ class PlayInfoViewController: BaseVolumeViewController, PlayListener {
         subtitleLabel.text = ""
         extraLabel.text = ""
         currentTimeLabel.text = ""
+        
+        BaseViewController.setPlayingStatus(false)
+        playerProperties = nil
     }
     
     private func refreshPlayingDetails() {

@@ -44,6 +44,8 @@ class JsonHelper {
             inputActionString = ApiAction.Input.home
         case InputAction.INFO:
             inputActionString = ApiAction.Input.info
+        case InputAction.MENU:
+            inputActionString = ApiAction.Input.menu
         }
         
         json[methodKey].string = inputActionString
@@ -89,6 +91,28 @@ class JsonHelper {
         var json = baseJson
         json[methodKey].string = ApiAction.Application.setVolume
         json[paramsKey] = ["volume" : volume]
+        
+        return json
+    }
+    
+    static func getSetSubtitleJson(subtitleIndex: Int?) -> JSON {
+        var json = baseJson
+        json[methodKey].string = ApiAction.Player.setSubtitle
+        
+        if (subtitleIndex != nil) {
+            json[paramsKey] = [playerIdKey : 1, "subtitle" : subtitleIndex!, "enable" : true ]
+        } else {
+            json[paramsKey] = [playerIdKey : 1, "subtitle" : 0, "enable" : false ]
+        }
+        
+        return json
+    }
+    
+    static func getSetAudioJson(audioStreamIndex: Int) -> JSON {
+        var json = baseJson
+        json[methodKey].string = ApiAction.Player.setAudioStream
+
+        json[paramsKey] = [playerIdKey : 1, "stream" : audioStreamIndex]
         
         return json
     }

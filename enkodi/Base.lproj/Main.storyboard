@@ -97,26 +97,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="y3p-Jf-VGu" userLabel="actionsStackView">
                                 <rect key="frame" x="0.0" y="28" width="600" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-Dt-tSk">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-Dt-tSk" userLabel="Home button">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="homeButton"/>
                                         <connections>
                                             <action selector="homeButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="YdA-SM-2wF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-et-WHZ">
-                                        <rect key="frame" x="300" y="0.0" width="300" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFI-et-WHZ" userLabel="Back button">
+                                        <rect key="frame" x="200" y="0.0" width="200" height="50"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" image="backButton"/>
                                         <connections>
                                             <action selector="backButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="oFw-yt-LU4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzd-fL-ufr" userLabel="Menu button">
+                                        <rect key="frame" x="400" y="0.0" width="200" height="50"/>
+                                        <state key="normal" image="menuButton"/>
+                                        <connections>
+                                            <action selector="menuButtonOnClick:" destination="CvA-hh-s1j" eventType="touchUpInside" id="VjG-kx-jb5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Sme-Dt-tSk" firstAttribute="width" secondItem="xFI-et-WHZ" secondAttribute="width" id="12M-2H-cxk"/>
+                                    <constraint firstItem="xzd-fL-ufr" firstAttribute="width" secondItem="xFI-et-WHZ" secondAttribute="width" id="D9g-6E-Pah"/>
                                     <constraint firstItem="Sme-Dt-tSk" firstAttribute="height" secondItem="xFI-et-WHZ" secondAttribute="height" id="cCd-9C-3mz"/>
+                                    <constraint firstItem="xzd-fL-ufr" firstAttribute="height" secondItem="xFI-et-WHZ" secondAttribute="height" id="k1E-wv-Zlz"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nFt-7K-gtB" userLabel="controllersStackView">
@@ -216,6 +225,7 @@
                         <outlet property="downButton" destination="XlS-mp-Y7B" id="S4L-8X-pNa"/>
                         <outlet property="homeButton" destination="Sme-Dt-tSk" id="12K-MM-5hb"/>
                         <outlet property="leftButton" destination="IOD-Zy-D0o" id="q88-yU-B4L"/>
+                        <outlet property="menuButton" destination="xzd-fL-ufr" id="4Kp-ja-Jro"/>
                         <outlet property="okButton" destination="c4h-5w-iNu" id="eyW-Ck-Wwc"/>
                         <outlet property="rightButton" destination="f9A-Fz-8kl" id="yh8-65-S7K"/>
                         <outlet property="upButton" destination="jDy-K2-za0" id="dRr-Lw-weh"/>
@@ -621,11 +631,17 @@
                                                 <rect key="frame" x="140" y="0.0" width="30" height="50"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="audioButton"/>
+                                                <connections>
+                                                    <action selector="audioStreamButtonOnClick:" destination="Wtm-bN-EgE" eventType="touchUpInside" id="6c9-zo-JDm"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xr-re-oJV" userLabel="subtitleButton">
                                                 <rect key="frame" x="210" y="0.0" width="30" height="50"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" image="subtitleButton"/>
+                                                <connections>
+                                                    <action selector="subtitlesButtonOnClick:" destination="Wtm-bN-EgE" eventType="touchUpInside" id="7LJ-LR-Dkf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -634,19 +650,19 @@
                             <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="nZe-c9-FPZ" userLabel="infoStackView">
                                 <rect key="frame" x="0.0" y="322" width="600" height="65"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="aaaaaa" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-kT-dHQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-kT-dHQ">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="29"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" bbbbb" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiP-BC-yUD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiP-BC-yUD">
                                         <rect key="frame" x="0.0" y="29" width="600" height="21"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" ccccccc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-HT-Jp8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOQ-HT-Jp8">
                                         <rect key="frame" x="0.0" y="50" width="600" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="LXF-WE-yR5"/>
@@ -724,6 +740,7 @@
                         <outlet property="playerProgressBar" destination="Ywh-f6-sOS" id="iKf-n0-tnA"/>
                         <outlet property="stopButton" destination="ham-Ip-AE2" id="ksm-gt-RUn"/>
                         <outlet property="subtitleLabel" destination="KiP-BC-yUD" id="gFf-Ey-NhK"/>
+                        <outlet property="subtitlesButton" destination="8Xr-re-oJV" id="09Y-7t-jlc"/>
                         <outlet property="titleLabel" destination="Zx2-kT-dHQ" id="1PU-Hc-rTV"/>
                         <outlet property="volumeLabel" destination="h5w-3P-qwu" id="Uc4-Wt-ALY"/>
                         <outlet property="volumeSlider" destination="Y13-Bs-tFz" id="w2W-O7-FIE"/>
@@ -791,6 +808,7 @@
         <image name="homeButton" width="50" height="50"/>
         <image name="infoButton" width="30" height="30"/>
         <image name="leftButton" width="50" height="50"/>
+        <image name="menuButton" width="50" height="50"/>
         <image name="okButton" width="50" height="50"/>
         <image name="playButton" width="50" height="50"/>
         <image name="playButtonSmall" width="25" height="25"/>

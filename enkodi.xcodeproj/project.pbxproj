@@ -21,6 +21,8 @@
 		3A82EB751D378D4F00B8CF40 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A82EB741D378D4F00B8CF40 /* Launch Screen.storyboard */; };
 		3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
+		3AA48C121D3E9BB4005DE36A /* AudioStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C111D3E9BB4005DE36A /* AudioStream.swift */; };
+		3AACFAC31D3D56FD009949C3 /* Subtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AACFAC21D3D56FD009949C3 /* Subtitles.swift */; };
 		3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */; };
 		3AB79BA41D316285006527BD /* PlayListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA31D316285006527BD /* PlayListener.swift */; };
 		3AB79BA61D3165F7006527BD /* PlayingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA51D3165F7006527BD /* PlayingDetails.swift */; };
@@ -44,6 +46,8 @@
 		3AE581DC1D2FEA9B00ACE467 /* BaseVolumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581DB1D2FEA9B00ACE467 /* BaseVolumeViewController.swift */; };
 		3AE581E01D2FEDC700ACE467 /* VolumeChangeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581DF1D2FEDC700ACE467 /* VolumeChangeNotification.swift */; };
 		3AE581E21D2FF1D800ACE467 /* WebSocketListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE581E11D2FF1D800ACE467 /* WebSocketListener.swift */; };
+		3AF0ED231D37F5C1000BAD7C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF0ED221D37F5C1000BAD7C /* Theme.swift */; };
+		3AF0ED251D37F606000BAD7C /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF0ED241D37F606000BAD7C /* ThemeManager.swift */; };
 		3AF4D44F1D2D519700F24D08 /* BaseTvShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4D44E1D2D519700F24D08 /* BaseTvShow.swift */; };
 		AB3CA06385C48190D513F007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3CA0937689B8B0ADF667D5 /* Main.storyboard */; };
 		AB3CA19978DBE361746C75CB /* enkodiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3CAC5C9505FC30DFA436BF /* enkodiTests.swift */; };
@@ -87,6 +91,8 @@
 		3A82EB741D378D4F00B8CF40 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeViewController.swift; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		3AA48C111D3E9BB4005DE36A /* AudioStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioStream.swift; sourceTree = "<group>"; };
+		3AACFAC21D3D56FD009949C3 /* Subtitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtitles.swift; sourceTree = "<group>"; };
 		3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeInfo.swift; sourceTree = "<group>"; };
 		3AB79BA31D316285006527BD /* PlayListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListener.swift; sourceTree = "<group>"; };
 		3AB79BA51D3165F7006527BD /* PlayingDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingDetails.swift; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		3AE581DB1D2FEA9B00ACE467 /* BaseVolumeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseVolumeViewController.swift; sourceTree = "<group>"; };
 		3AE581DF1D2FEDC700ACE467 /* VolumeChangeNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeChangeNotification.swift; sourceTree = "<group>"; };
 		3AE581E11D2FF1D800ACE467 /* WebSocketListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocketListener.swift; path = ../WebSocketListener.swift; sourceTree = "<group>"; };
+		3AF0ED221D37F5C1000BAD7C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3AF0ED241D37F606000BAD7C /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		3AF4D44E1D2D519700F24D08 /* BaseTvShow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTvShow.swift; sourceTree = "<group>"; };
 		AB3CA10B7934364F59A21751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Base; path = Base.lproj/LaunchScreen.storyboard.bad; sourceTree = "<group>"; };
 		AB3CA2C89CEA2F71BB79393E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -211,8 +219,8 @@
 		3A2620A91D2C4B1800019208 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				3AF0ED211D37F5A0000BAD7C /* theme */,
 				3A59A7901D343E5F005C4280 /* url */,
-				3AB79BA71D32547C006527BD /* color */,
 				3AE581C81D2E697C00ACE467 /* time */,
 				3A2620AA1D2C4B2800019208 /* ApiAction.swift */,
 			);
@@ -244,6 +252,22 @@
 			path = url;
 			sourceTree = "<group>";
 		};
+		3AA48C101D3E9BAA005DE36A /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				3AA48C111D3E9BB4005DE36A /* AudioStream.swift */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		3AACFAC11D3D56F5009949C3 /* subtitles */ = {
+			isa = PBXGroup;
+			children = (
+				3AACFAC21D3D56FD009949C3 /* Subtitles.swift */,
+			);
+			path = subtitles;
+			sourceTree = "<group>";
+		};
 		3AB79BA21D31627C006527BD /* play */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,7 +281,8 @@
 			children = (
 				3AB79BA81D325489006527BD /* UIAppColor.swift */,
 			);
-			path = color;
+			name = color;
+			path = ../color;
 			sourceTree = "<group>";
 		};
 		3AB79BAC1D32BA4A006527BD /* extensions */ = {
@@ -321,6 +346,8 @@
 		3AE581C31D2D922A00ACE467 /* player */ = {
 			isa = PBXGroup;
 			children = (
+				3AA48C101D3E9BAA005DE36A /* audio */,
+				3AACFAC11D3D56F5009949C3 /* subtitles */,
 				3AE581C41D2D923900ACE467 /* PlayerProperties.swift */,
 				3AB79BA51D3165F7006527BD /* PlayingDetails.swift */,
 			);
@@ -410,6 +437,16 @@
 				3AE581E11D2FF1D800ACE467 /* WebSocketListener.swift */,
 			);
 			path = websocket;
+			sourceTree = "<group>";
+		};
+		3AF0ED211D37F5A0000BAD7C /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				3AB79BA71D32547C006527BD /* color */,
+				3AF0ED221D37F5C1000BAD7C /* Theme.swift */,
+				3AF0ED241D37F606000BAD7C /* ThemeManager.swift */,
+			);
+			path = theme;
 			sourceTree = "<group>";
 		};
 		3AF4D44C1D2D519700F24D08 /* model */ = {
@@ -650,14 +687,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE581C51D2D923900ACE467 /* PlayerProperties.swift in Sources */,
+				3AF0ED251D37F606000BAD7C /* ThemeManager.swift in Sources */,
 				3AB79BA41D316285006527BD /* PlayListener.swift in Sources */,
 				3A2620B21D2C518700019208 /* RequestFacade.swift in Sources */,
 				3AE581D81D2FE20300ACE467 /* VolumeChangedListener.swift in Sources */,
+				3AA48C121D3E9BB4005DE36A /* AudioStream.swift in Sources */,
 				3AE581C71D2DA2D600ACE467 /* BaseModel.swift in Sources */,
 				3AC4E0571D30EF5D0099A369 /* TvShowEpisodeTableCell.swift in Sources */,
 				3AE581E01D2FEDC700ACE467 /* VolumeChangeNotification.swift in Sources */,
 				3AE581E21D2FF1D800ACE467 /* WebSocketListener.swift in Sources */,
 				3A2620B01D2C4D8D00019208 /* JsonHelper.swift in Sources */,
+				3AF0ED231D37F5C1000BAD7C /* Theme.swift in Sources */,
 				3AB79BAB1D325887006527BD /* BaseTableViewController.swift in Sources */,
 				3AB79BA91D325489006527BD /* UIAppColor.swift in Sources */,
 				3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */,
@@ -672,6 +712,7 @@
 				3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */,
 				3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */,
 				3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */,
+				3AACFAC31D3D56FD009949C3 /* Subtitles.swift in Sources */,
 				3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */,
 				3A096C361D2C122C005B8F3C /* Requestable.swift in Sources */,
 				3A2620AB1D2C4B2800019208 /* ApiAction.swift in Sources */,

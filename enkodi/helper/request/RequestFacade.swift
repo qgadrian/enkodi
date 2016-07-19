@@ -74,6 +74,16 @@ class RequestFacade {
         sendRequest(json)
     }
     
+    func sendSetSubtitle(subtitleIndex: Int?) {
+        let json = JsonHelper.getSetSubtitleJson(subtitleIndex)
+        sendRequest(json)
+    }
+    
+    func sendSetAudio(audioStreamIndex: Int) {
+        let json = JsonHelper.getSetAudioJson(audioStreamIndex)
+        sendRequest(json)
+    }
+    
     // Player info
     func sendGetPlayerProperties(requestId: UInt32) {
         let json = JsonHelper.getGetPlayerProperties(requestId)

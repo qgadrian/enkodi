@@ -100,7 +100,9 @@ class TvShowSeasonsViewController: BaseTableViewController, UITableViewDelegate,
         
         if (tvShowEpisode.isWatched()) {
             cell.accessoryType = .Checkmark
-            cell.tintColor = UIAppColor.buildUIColor(UIAppColor.cellAccesoryTypeColor)
+            // TODO remove this line
+//            cell.tintColor = UIAppColor.buildUIColor(UIAppColor.cellAccesoryTypeColor)
+            cell.tintColor = ThemeManager.currentTheme().cellHighlightColor
         } else {
             cell.accessoryType = .DisclosureIndicator
         }

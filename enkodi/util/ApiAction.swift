@@ -18,6 +18,7 @@ struct ApiAction {
         static let back = "Input.Back"
         static let home = "Input.Home"
         static let info = "Input.Info"
+        static let menu = "Input.ContextMenu"
     }
     
     struct Execution {
@@ -34,6 +35,8 @@ struct ApiAction {
         static let getProperties = "Player.GetProperties"
         static let getCurrentlyPlaying = "Player.GetItem"
         static let playFile = "Player.Open"
+        static let setSubtitle = "Player.SetSubtitle"
+        static let setAudioStream = "Player.SetAudioStream"
     }
     
     struct Application {

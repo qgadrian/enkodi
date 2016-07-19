@@ -21,6 +21,7 @@ class PlayerControllerViewController : BaseVolumeViewController {
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var menuButton: UIButton!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -57,4 +58,7 @@ class PlayerControllerViewController : BaseVolumeViewController {
         requestFacade!.sendInputAction(InputAction.OK)
     }
     
+    @IBAction func menuButtonOnClick(sender: AnyObject) {
+        requestFacade!.sendInputAction(InputAction.MENU)
+    }
 }

@@ -34,6 +34,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="enkodi_splash_image" width="2048" height="2048"/>
+        <image name="enkodi_splash_image" width="900" height="900"/>
     </resources>
 </document>

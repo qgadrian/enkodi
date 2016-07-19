@@ -15,6 +15,8 @@ class PlayerProperties: BaseModel {
     var currentTime: Time?
     var totalTime: Time?
     var speed: Int?
+    var subtitles: [Subtitles]?
+    var audioStreams: [AudioStream]?
     
     required init?(_ map: Map) {
         
@@ -25,6 +27,8 @@ class PlayerProperties: BaseModel {
         currentTime <- map["time"]
         totalTime <- map["totaltime"]
         speed <- map["speed"]
+        subtitles <- map["subtitles"]
+        audioStreams <- map["audiostreams"]
     }
     
 }
