@@ -172,6 +172,27 @@ class JsonHelper {
         return json
     }
     
+    static func getGetBaseMovies(requestId: UInt32) -> JSON {
+        var json = baseJson
+        json[requestIdKey].uInt32 = requestId
+        json[methodKey].string = ApiAction.VideoLibrary.getMovies
+        json[paramsKey] = [sortKey : [methodKey: "label"], propertiesKey : [
+            "title",
+            "genre",
+            "year",
+            "rating",
+            "tagline",
+            "plot",
+            "playcount",
+            "country",
+            "imdbnumber",
+            "runtime",
+            "file"
+            ]]
+        
+        return json
+    }
+    
     static func getGetTvShows(requestId: UInt32) -> JSON {
         var json = baseJson
         json[requestIdKey].uInt32 = requestId

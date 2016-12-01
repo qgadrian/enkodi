@@ -102,6 +102,11 @@ class RequestFacade {
     }
     
     // Video library
+    func sendGetMovies(requestId: UInt32) {
+        let json = JsonHelper.getGetBaseMovies(requestId)
+        sendRequest(json)
+    }
+    
     func sendGetTvShows(requestId: UInt32) {
         let json = JsonHelper.getGetTvShows(requestId)
         sendRequest(json)

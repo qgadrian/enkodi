@@ -16,7 +16,7 @@
             startingLineNumber = "36"
             endingLineNumber = "36"
             landmarkName = "viewDidLoad()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "init(coder:)"
-            landmarkType = "5">
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -79,8 +79,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "sendRequest(_:)"
-            landmarkType = "5">
+            landmarkName = "sendRequest(json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -232,12 +232,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            timestampString = "489855446.077516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "playPauseButtonOnClick(_:)"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "receivedPlayerStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -253,8 +253,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
             endingLineNumber = "35"
-            landmarkName = "sendRequestForObject(_:_:)"
-            landmarkType = "5">
+            landmarkName = "sendRequestForObject(json:_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -270,7 +270,7 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "init()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -285,8 +285,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "backgroundThread(_:background:completion:)"
-            landmarkType = "5">
+            landmarkName = "backgroundThread(delay:background:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -301,8 +301,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "receivedTvShows(_:)"
-            landmarkType = "5">
+            landmarkName = "receivedTvShows(json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -333,8 +333,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
             endingLineNumber = "53"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -349,8 +349,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
             endingLineNumber = "40"
-            landmarkName = "receivedTvShows(_:)"
-            landmarkType = "5">
+            landmarkName = "receivedTvShows(json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -365,8 +365,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "receivedTvShows(_:)"
-            landmarkType = "5">
+            landmarkName = "receivedTvShows(json:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -424,13 +424,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/helper/request/RequestFacade.swift"
-            timestampString = "490642830.358685"
+            timestampString = "490645114.935798"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "checkAndOpenSocketConnection()"
-            landmarkType = "5">
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "sendGetAllTvShowSeasonsEpisodes(_:requestId:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -477,8 +477,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "numberOfSectionsInTableView(_:)"
-            landmarkType = "5">
+            landmarkName = "numberOfSectionsInTableView(tableView:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -493,8 +493,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "5">
+            landmarkName = "tableView(tableView:numberOfRowsInSection:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -510,7 +510,7 @@
             startingLineNumber = "32"
             endingLineNumber = "32"
             landmarkName = "refreshTvShows()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -638,7 +638,7 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "init(requestProtocol:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -654,7 +654,7 @@
             startingLineNumber = "41"
             endingLineNumber = "41"
             landmarkName = "sendRequest(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -670,7 +670,7 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "getInstance(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -686,7 +686,7 @@
             startingLineNumber = "28"
             endingLineNumber = "28"
             landmarkName = "init(requestProtocol:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -702,7 +702,7 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "getInstance(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -718,7 +718,7 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "init(webSocketDelegate:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -734,7 +734,7 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "init(webSocketDelegate:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -750,7 +750,7 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "getInstance(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -765,8 +765,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "sendRequest(_:)"
-            landmarkType = "5">
+            landmarkName = "sendRequest(json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -782,7 +782,7 @@
             startingLineNumber = "30"
             endingLineNumber = "30"
             landmarkName = "init(requestProtocol:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -792,11 +792,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playercontroller/PlayerControllerViewController.swift"
-            timestampString = "490553763.057556"
+            timestampString = "489698448.548162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "homeButtonOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -813,8 +813,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
+            landmarkName = "prepareForSegue(segue:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -829,8 +829,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
             endingLineNumber = "67"
-            landmarkName = "prepareForSegue(_:sender:)"
-            landmarkType = "5">
+            landmarkName = "prepareForSegue(segue:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -845,8 +845,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -904,11 +904,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/library/tvshows/season/TvShowSeasonsViewController.swift"
-            timestampString = "490553144.728841"
+            timestampString = "490129806.060637"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1022,7 +1022,7 @@
             startingLineNumber = "74"
             endingLineNumber = "74"
             landmarkName = "isPlayerPlaying()"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1032,11 +1032,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/helper/json/JsonHelper.swift"
-            timestampString = "490553763.057556"
+            timestampString = "489848718.668434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "getExecuteActionJson(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1048,11 +1048,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playercontroller/PlayerControllerViewController.swift"
-            timestampString = "490553763.057556"
+            timestampString = "489783504.584528"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "rightButtonOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1064,11 +1064,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playercontroller/PlayerControllerViewController.swift"
-            timestampString = "490553763.057556"
+            timestampString = "489783507.791097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "rightButtonOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1160,13 +1160,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/helper/json/JsonHelper.swift"
-            timestampString = "490642830.358685"
+            timestampString = "489848718.668434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "getSendPlayFile(_:)"
-            landmarkType = "5">
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "JsonHelper"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1176,12 +1176,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/helper/json/JsonHelper.swift"
-            timestampString = "490642830.358685"
+            timestampString = "489848718.668434"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "getSendPlayFile(_:)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "getGetApplicationPropertiesJson(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1192,11 +1192,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            timestampString = "489844443.06778"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "receivedPlayerStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1208,12 +1208,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            timestampString = "489844119.665556"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1224,12 +1224,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490642618.748969"
+            timestampString = "489855446.077516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "onStartPlaying(_:)"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "infoButtonOnClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1320,11 +1320,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490642944.730919"
+            timestampString = "489866075.399426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "PlayInfoViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -1336,11 +1336,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            timestampString = "489855446.077516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "receivedPlayerStatus(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -1352,12 +1352,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490642944.730919"
+            timestampString = "489866075.399426"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
-            landmarkName = "refreshPlayingDetails()"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "subtitlesButtonOnClick(_:)"
             landmarkType = "5">
             <Locations>
                <Location
@@ -1463,12 +1463,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enkodi/util/theme/Theme.swift"
-            timestampString = "490207802.208441"
+            filePath = "enkodi/view/library/movies/MoviesViewController.swift"
+            timestampString = "490645161.770976"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33">
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "receivedMovies(json:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1477,14 +1479,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            filePath = "enkodi/view/library/movies/MoviesViewController.swift"
+            timestampString = "490645169.590747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "subtitlesButtonOnClick(_:)"
-            landmarkType = "5">
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "refreshMovies()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1493,62 +1495,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559748.441959"
+            filePath = "enkodi/view/library/movies/MoviesViewController.swift"
+            timestampString = "490646755.2157"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "receivedPlayerStatus(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "enkodi/view/playInfoController/PlayInfoViewController.swift"
-            timestampString = "490559747.236371"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "subtitlesButtonOnClick(_:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Enkodi.PlayInfoViewController.subtitlesButtonOnClick (Swift.AnyObject) -&gt; ()"
-                  moduleName = "Enkodi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/playInfoController/PlayInfoViewController.swift"
-                  timestampString = "490559748.562713"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "340">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Enkodi.PlayInfoViewController.subtitlesButtonOnClick (Swift.AnyObject) -&gt; ()"
-                  moduleName = "Enkodi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adrian/workspace/dev/ios/enkodi/enkodi/view/playInfoController/PlayInfoViewController.swift"
-                  timestampString = "490559748.562878"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "512">
-               </Location>
-            </Locations>
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "tableView(tableView:cellForRowAtIndexPath:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

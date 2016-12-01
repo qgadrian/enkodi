@@ -39,7 +39,7 @@ class TvShowEpisodeViewController: BaseViewController {
         let tvShowEpisodeInfo = Mapper<TvShowEpisodeInfo>().map(json[JsonHelper.resultKey]["episodedetails"].object)
         
         let url = "http://192.168.0.23:7523/image" + UrlUtil.parseImageToUrlPath((tvShowEpisodeInfo?.thumbnail)!)
-        Alamofire.request(.GET, url).authenticate(user: "adrian", password: "***REMOVED***").responseImage {
+        Alamofire.request(.GET, url).authenticate(user: "adrian", password: "988000adrian").responseImage {
             response in debugPrint(response)
             
             if let image = response.result.value {

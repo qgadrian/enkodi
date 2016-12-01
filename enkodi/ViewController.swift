@@ -24,8 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
         
-//        let username = "adrian"
-//        let password = "***REMOVED***"
+//        let username = "user"
+//        let password = "pass"
 //        let credentialData = "\(username):\(password)".dataUsingEncoding(NSUTF8StringEncoding)!
 //        let base64Credentials = credentialData.base64EncodedStringWithOptions([])
 //        let headers = ["Authorization": "Basic \(base64Credentials)"]

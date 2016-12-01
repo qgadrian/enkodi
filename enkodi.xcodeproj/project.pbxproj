@@ -22,6 +22,10 @@
 		3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */; };
 		3A9BF1ED1D29B623009A8EDF /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9BF1EC1D29B623009A8EDF /* Starscream.framework */; };
 		3AA48C121D3E9BB4005DE36A /* AudioStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C111D3E9BB4005DE36A /* AudioStream.swift */; };
+		3AA48C151D3EA01F005DE36A /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C141D3EA01F005DE36A /* MoviesViewController.swift */; };
+		3AA48C181D3EA294005DE36A /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C171D3EA294005DE36A /* Movie.swift */; };
+		3AA48C1A1D3EA35D005DE36A /* BaseWatchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C191D3EA35D005DE36A /* BaseWatchable.swift */; };
+		3AA48C1D1D3EA5DE005DE36A /* MovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA48C1C1D3EA5DE005DE36A /* MovieTableCell.swift */; };
 		3AACFAC31D3D56FD009949C3 /* Subtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AACFAC21D3D56FD009949C3 /* Subtitles.swift */; };
 		3AB79BA11D311F6E006527BD /* TvShowEpisodeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */; };
 		3AB79BA41D316285006527BD /* PlayListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB79BA31D316285006527BD /* PlayListener.swift */; };
@@ -92,6 +96,10 @@
 		3A8378CA1D3110950077B7DA /* TvShowEpisodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeViewController.swift; sourceTree = "<group>"; };
 		3A9BF1EC1D29B623009A8EDF /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		3AA48C111D3E9BB4005DE36A /* AudioStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioStream.swift; sourceTree = "<group>"; };
+		3AA48C141D3EA01F005DE36A /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		3AA48C171D3EA294005DE36A /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		3AA48C191D3EA35D005DE36A /* BaseWatchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWatchable.swift; sourceTree = "<group>"; };
+		3AA48C1C1D3EA5DE005DE36A /* MovieTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableCell.swift; sourceTree = "<group>"; };
 		3AACFAC21D3D56FD009949C3 /* Subtitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtitles.swift; sourceTree = "<group>"; };
 		3AB79BA01D311F6E006527BD /* TvShowEpisodeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TvShowEpisodeInfo.swift; sourceTree = "<group>"; };
 		3AB79BA31D316285006527BD /* PlayListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListener.swift; sourceTree = "<group>"; };
@@ -260,6 +268,31 @@
 			path = audio;
 			sourceTree = "<group>";
 		};
+		3AA48C131D3EA00F005DE36A /* movies */ = {
+			isa = PBXGroup;
+			children = (
+				3AA48C1B1D3EA5D3005DE36A /* cell */,
+				3AA48C141D3EA01F005DE36A /* MoviesViewController.swift */,
+			);
+			path = movies;
+			sourceTree = "<group>";
+		};
+		3AA48C161D3EA28B005DE36A /* movie */ = {
+			isa = PBXGroup;
+			children = (
+				3AA48C171D3EA294005DE36A /* Movie.swift */,
+			);
+			path = movie;
+			sourceTree = "<group>";
+		};
+		3AA48C1B1D3EA5D3005DE36A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AA48C1C1D3EA5DE005DE36A /* MovieTableCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		3AACFAC11D3D56F5009949C3 /* subtitles */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +398,7 @@
 		3AE581CB1D2E9B6800ACE467 /* library */ = {
 			isa = PBXGroup;
 			children = (
+				3AA48C131D3EA00F005DE36A /* movies */,
 				3AE581CC1D2E9B7300ACE467 /* tvshows */,
 			);
 			path = library;
@@ -452,11 +486,13 @@
 		3AF4D44C1D2D519700F24D08 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				3AA48C161D3EA28B005DE36A /* movie */,
 				3AE581DD1D2FED9F00ACE467 /* notification */,
 				3AE581D21D2EB36600ACE467 /* application */,
 				3AE581C31D2D922A00ACE467 /* player */,
 				3AF4D44D1D2D519700F24D08 /* tvshow */,
 				3AE581C61D2DA2D600ACE467 /* BaseModel.swift */,
+				3AA48C191D3EA35D005DE36A /* BaseWatchable.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -597,9 +633,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "adrian quintas";
 				TargetAttributes = {
+					AB3CA3EFE813E1970AEDEEBF = {
+						DevelopmentTeam = LU5LT4UV5K;
+						TestTargetID = AB3CA88AE2278FDEB560FA42;
+					};
 					AB3CA88AE2278FDEB560FA42 = {
 						DevelopmentTeam = LU5LT4UV5K;
 					};
@@ -694,6 +734,7 @@
 				3AA48C121D3E9BB4005DE36A /* AudioStream.swift in Sources */,
 				3AE581C71D2DA2D600ACE467 /* BaseModel.swift in Sources */,
 				3AC4E0571D30EF5D0099A369 /* TvShowEpisodeTableCell.swift in Sources */,
+				3AA48C1A1D3EA35D005DE36A /* BaseWatchable.swift in Sources */,
 				3AE581E01D2FEDC700ACE467 /* VolumeChangeNotification.swift in Sources */,
 				3AE581E21D2FF1D800ACE467 /* WebSocketListener.swift in Sources */,
 				3A2620B01D2C4D8D00019208 /* JsonHelper.swift in Sources */,
@@ -704,6 +745,7 @@
 				3AC4E0541D30ECD60099A369 /* BaseTvShowEpisode.swift in Sources */,
 				3A096C2D1D2C03F2005B8F3C /* BaseViewController.swift in Sources */,
 				3A096C331D2C119C005B8F3C /* WebSocketHelper.swift in Sources */,
+				3AA48C1D1D3EA5DE005DE36A /* MovieTableCell.swift in Sources */,
 				3A2620B51D2C5F9700019208 /* PlayInfoViewController.swift in Sources */,
 				3AE581D11D2E9C5600ACE467 /* TvShowTableCell.swift in Sources */,
 				3AB79BAF1D32BA7D006527BD /* UIButton.swift in Sources */,
@@ -712,11 +754,13 @@
 				3AE581CA1D2E699600ACE467 /* TimeUtil.swift in Sources */,
 				3AC4E04E1D304BB80099A369 /* TvShowSeasonsViewController.swift in Sources */,
 				3A8378CB1D3110950077B7DA /* TvShowEpisodeViewController.swift in Sources */,
+				3AA48C181D3EA294005DE36A /* Movie.swift in Sources */,
 				3AACFAC31D3D56FD009949C3 /* Subtitles.swift in Sources */,
 				3AC4E0511D30EC3F0099A369 /* TvShowSeason.swift in Sources */,
 				3A096C361D2C122C005B8F3C /* Requestable.swift in Sources */,
 				3A2620AB1D2C4B2800019208 /* ApiAction.swift in Sources */,
 				3A59A7921D343E6A005C4280 /* UrlUtil.swift in Sources */,
+				3AA48C151D3EA01F005DE36A /* MoviesViewController.swift in Sources */,
 				3AF4D44F1D2D519700F24D08 /* BaseTvShow.swift in Sources */,
 				3AB79BA61D3165F7006527BD /* PlayingDetails.swift in Sources */,
 				AB3CAE3CB4100ACDA6CAD1DA /* AppDelegate.swift in Sources */,
@@ -785,8 +829,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -807,6 +853,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 2.3;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -814,24 +862,26 @@
 		AB3CA8CBE2AC23E97D4A31AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LU5LT4UV5K;
 				INFOPLIST_FILE = enkodiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Enkodi.app/Enkodi";
 			};
 			name = Debug;
 		};
 		AB3CAB149259DEAFF65A2B1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/enkodi.app/enkodi";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = LU5LT4UV5K;
 				INFOPLIST_FILE = enkodiTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qgadrian.enkodiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Enkodi.app/Enkodi";
 			};
 			name = Release;
 		};
@@ -913,8 +963,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -943,6 +995,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};

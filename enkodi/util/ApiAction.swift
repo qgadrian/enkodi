@@ -45,6 +45,7 @@ struct ApiAction {
     }
     
     struct VideoLibrary {
+        static let getMovies = "VideoLibrary.GetMovies"
         static let getTvShows = "VideoLibrary.GetTVShows"
         static let getTvShowSeasons = "VideoLibrary.GetSeasons"
         static let getTvShowSeasonEpisodes = "VideoLibrary.GetEpisodes"

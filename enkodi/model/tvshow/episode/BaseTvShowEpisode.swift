@@ -10,33 +10,26 @@ import Foundation
 import ObjectMapper
 
 
-class BaseTvShowEpisode: BaseModel {
+class BaseTvShowEpisode: BaseWatchable {
     
     var id: Int?
     var title: String?
     var plot: String?
     var episodeNumber: Int?
-    var file: String?
-    var officialTotalTime: Int?
     var seasonNumber: Int?
-    var playCount: Int?
     
     required init?(_ map: Map) {
-        
+        super.init(map)
     }
     
-    func mapping(map: Map) {
+    override func mapping(map: Map) {
+        super.mapping(map)
+        
         id <- map["episodeid"]
         title <- map["title"]
         plot <- map["plot"]
         episodeNumber <- map["episode"]
-        file <- map["file"]
-        officialTotalTime <- map["runtime"]
         seasonNumber <- map["season"]
-        playCount <- map["playcount"]
     }
-    
-    func isWatched() -> Bool {
-        return playCount != nil && playCount > 0
-    }
+
 }
